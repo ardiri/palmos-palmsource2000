@@ -1,0 +1,3133 @@
+/*
+ * @(#)palmsource.rcp
+ *
+ * Copyright 2000, Aaron Ardiri (mailto:aaron@ardiri.com)
+ * All rights reserved.
+ *
+ * This file was generated as part of the "palmsource" guide application
+ * (for use at PalmSource 2000 [Santa Clara, CA]) specifically  designed 
+ * for the Palm Computing Platform.
+ *
+ *   http://www.palm.com/
+ *
+ * The contents of this file are confidential and proprietary in nature
+ * ("Confidential Information"). Redistribution or modification without 
+ * prior consent of the original author(s) is prohibited.
+ */
+
+#include "resource.h"
+
+FORM ID deviForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "Incompatability"
+
+  LABEL "the device is incompatible" AUTOID AT (CENTER 20)
+  LABEL "read README.TXT for assistance." AUTOID AT (CENTER PrevTop+11)
+
+  LABEL "http://www.ardiri.com/" AUTOID AT (CENTER PrevTop+15) FONT 1
+
+  LABEL "Copyright 2000" AUTOID AT (8 PrevTop+20)
+  FORMBITMAP AT (88 PrevTop) BITMAP bitmapPalm
+  LABEL "Aaron Ardiri" AUTOID AT (8 PrevTop+12)
+  LABEL "All rights reserved" AUTOID AT (8 PrevTop+12)
+
+  LABEL "PalmSource" AUTOID AT (8 PrevTop+16) FONT 1
+  LABEL "version 1.0c" AUTOID AT (8 PrevTop+12) FONT 1
+
+  BUTTON "Ok" AUTOID AT (CENTER 138 40 AUTO)
+END
+
+FORM ID helpForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "Tips"
+
+  SCROLLBAR ID helpFormScrollBar AT (147 16 7 120)
+    VALUE 0 MIN 0 MAX 0 PAGESIZE 54
+
+  BUTTON "Beam" ID helpFormBeamButton AT (6 139 AUTO AUTO)
+
+  BUTTON "" ID helpFormPrevButton AT (112 PrevTop+1 12 12) NOFRAME
+  FORMBITMAP AT (PrevLeft PrevTop) BITMAP bitmapPrevOff
+  BUTTON "" ID helpFormHomeButton AT (PrevLeft+14 PrevTop 12 12) NOFRAME
+  FORMBITMAP AT (PrevLeft PrevTop) BITMAP bitmapHome
+  BUTTON "" ID helpFormNextButton AT (PrevLeft+14 PrevTop 12 12) NOFRAME
+  FORMBITMAP AT (PrevLeft PrevTop) BITMAP bitmapNextOff
+
+  LABEL "version 1.0c" AUTOID AT (48 PrevTop) FONT 1
+END
+
+VERSION "1.0c"
+
+ICONFAMILY 
+  "images/icon1bpp.bmp" "images/icon2bpp.bmp" "" "images/icon8bpp.bmp" 
+TRANSPARENCY 255 0 0
+
+SMALLICONFAMILY 
+  "images/smic1bpp.bmp" "images/smic2bpp.bmp" "" "images/smic8bpp.bmp"
+TRANSPARENCY 255 0 0
+
+BITMAP ID bitmapPalm    "images/palm1bpp.bmp" COMPRESS
+BITMAP ID bitmapPrev    "images/prON1bpp.bmp" COMPRESS
+BITMAP ID bitmapPrevOff "images/prOF1bpp.bmp" COMPRESS
+BITMAP ID bitmapHome    "images/home1bpp.bmp" COMPRESS
+BITMAP ID bitmapNext    "images/nxON1bpp.bmp" COMPRESS
+BITMAP ID bitmapNextOff "images/nxOF1bpp.bmp" COMPRESS
+
+BITMAPFAMILY ID 2000 
+  "" "images/palm8bpp.bmp" "images/palm8bpp.bmp" "images/palm8bpp.bmp" COMPRESS
+
+BITMAPFAMILY ID 2001 
+  "" "images/s0018bpp.bmp" "images/s0018bpp.bmp" "images/s0018bpp.bmp" COMPRESS
+BITMAPFAMILY ID 2002
+  "" "images/s0028bpp.bmp" "images/s0028bpp.bmp" "images/s0028bpp.bmp" COMPRESS
+BITMAPFAMILY ID 2003 
+  "" "images/s0038bpp.bmp" "images/s0038bpp.bmp" "images/s0038bpp.bmp" COMPRESS
+BITMAPFAMILY ID 2004 
+  "" "images/s0048bpp.bmp" "images/s0048bpp.bmp" "images/s0048bpp.bmp" COMPRESS
+BITMAPFAMILY ID 2005 
+  "" "images/s0058bpp.bmp" "images/s0058bpp.bmp" "images/s0058bpp.bmp" COMPRESS
+BITMAPFAMILY ID 2006 
+  "" "images/s0068bpp.bmp" "images/s0068bpp.bmp" "images/s0068bpp.bmp" COMPRESS
+BITMAPFAMILY ID 2007 
+  "" "images/s0078bpp.bmp" "images/s0078bpp.bmp" "images/s0078bpp.bmp" COMPRESS
+BITMAPFAMILY ID 2008 
+  "" "images/s0088bpp.bmp" "images/s0088bpp.bmp" "images/s0088bpp.bmp" COMPRESS
+BITMAPFAMILY ID 2009 
+  "" "images/s0098bpp.bmp" "images/s0098bpp.bmp" "images/s0098bpp.bmp" COMPRESS
+BITMAPFAMILY ID 2010
+  "" "images/s0108bpp.bmp" "images/s0108bpp.bmp" "images/s0108bpp.bmp" COMPRESS
+
+/*
+ * INDEX
+ */
+
+HEX "hSTR" ID 5000 
+"<tPalm Source 2000>" \
+"<il2000>" \
+  "<ac><f7>Palm Source 2000</f>\n" \
+  "Santa Clara, CA, USA\n" \
+  "<v8>Dec 11-15, 2000</i></a><v0>" \
+"<x8>- <l5100>Tracks and Sessions</l>\n" \
+"<x8>- <l5200>Key Notes</l>\n" \
+"<x8>- <l5300>Schedule</l>\n" \
+"<x8>- <l5400>Solutions Pavilion</l>\n" \
+"<v4><x8>- <l5500>Events and Features</l>\n<v0>"
+"<ac>\251 2000 Palm, Inc and <l7000>ardiri.com</l></a>"
+
+BITMAPFAMILY ID 7000 
+  "images/_paw1bpp.bmp" "images/_paw2bpp.bmp" COMPRESS
+BITMAP       ID 7001 "images/face1bpp.bmp" COMPRESS
+
+HEX "hSTR" ID 7000
+"<tAbout Developers>"\
+"<il7000>" \
+  "<ac><f1>Aaron Ardiri</f>\n" \
+  "http://www.ardiri.com/\n" \
+  "<v4>aaron@ardiri.com</a></i><v0>" \
+  "<x8>- Application Framework\n"
+  "<v4><x8>- User Interface && Content\n<v0>"
+"<ir7001>" \
+  "<ac><f1>Jens Rupp</f>\n" \
+  "http://www.gacel.de/\n" \
+  "<v4>jens@gacel.de</a></i><v0>" \
+  "<x8>- PalmHelp Rendering Engine\n"
+
+/*
+ * TRACKS AND SESSIONS
+ */
+
+HEX "hSTR" ID 5100
+"<tTracks and Sessions>" \
+"<i2001> <l5101>Foundation Technologies</l>\n" \
+"<i2002> <l5102>New Platform Technologies</l>\n" \
+"<i2003> <l5103>Wireless Technologies</l>\n" \
+"<i2004> <l5104>Platform Tools</l>\n" \
+"<i2005> <l5105>Optimizing Applications</l>\n" \
+"<i2006> <l5106>Platform Solution Providers</l>\n" \
+"<i2007> <l5107>Enterprise Development</l>\n" \
+"<i2008> <l5108>Vertical Markets</l>\n" \
+"<i2009> <l5109>International</l>\n" \
+"<i2010> <l5110>Marketing && Support Services</l>"
+
+HEX "hSTR" ID 5101
+"<tTrack 1>" \
+"<ac><f2>Foundation Technologies</f></a>\n" \
+"<aj>Through these sessions and roundtables, you will add immeasurably " \
+"to your existing knowledge, learning the latest about conduits, " \
+"communications, and other essential topics. Even if you're already " \
+"proficient, you are sure to gain even greater insights into the " \
+"benefits of the Palm OS platform.</a>\n"
+"<f2>Sessions</f>\n" \
+"Thursday<x60><l100><f1>100</f></l>\n" \
+"10:00 - 11:00<x60>Ballroom A-B-G-H\n" \
+"Zen of Palm\n\n" \
+"Friday<x60><l101><f1>101</f></l>\n" \
+"10:00 - 11:00<x60>Ballroom A-B-G-H\n" \
+"OS && Device Cross Compatibility.\n\n" \
+"Friday<x60><l102><f1>102</f></l>\n" \
+"13:00 - 14:00<x60>Room 203/204\n" \
+"Developing Hardware Add-ons and Drivers\n\n" \
+"Friday<x60><l103><f1>103</f></l>\n" \
+"10:00 - 11:00<x60>Theater\n" \
+"Adding Communications to Your Application\n\n" \
+"Wednesday<x60><l105><f1>105</f></l>\n" \
+"11:15 - 12:15<x60>Theater\n" \
+"Writing Visual Basic Conduits for Windows\n\n" \
+"Wednesday<x60><l106><f1>106</f></l>\n" \
+"15:45 - 16:45<x60>Great America J\n" \
+"HotSync\231 Server Development\n\n" \
+"Friday<x60><l107><f1>107</f></l>\n" \
+"11:15 - 12:15<x60>Theater\n" \
+"Developing Full-Motion Animation\n\n" \
+"Thursday<x60><l108><f1>108</f></l>\n" \
+"12:30 - 13:30<x60>Theater\n" \
+"Writing the Non-Simple Application\n\n" \
+"<f2>Labs</f>\n" \
+"Friday<x60><l109><f1>109L</f></l>\n" \
+"11:15 - 12:15<x60>Large Lab\n" \
+"Debugging Communications\n\n" \
+"Wednesday<x60><l110><f1>110L</f></l>\n" \
+"11:15 - 12:15<x60>Large Lab\n" \
+"Creating Visual Basic Conduits for Windows®\n\n" \
+"Thursday<x60><l111><f1>111L</f></l>\n" \
+"15:00 - 16:00<x60>Small Lab\n" \
+"Creating C/C++ Conduits for Windows®\n\n" \
+"Tuesday<x60><l112><f1>112L</f></l>\n" \
+"13:30 - 14:30<x60>Small Lab\n" \
+"Creating C/C++ Conduits for Macintosh\231\n\n" \
+"Thursday<x60><l113><f1>113L</f></l>\n" \
+"17:30 - 18:30<x60>Large Lab\n" \
+"Hot Sync\231 Server Development\n\n" \
+"<f2>Roundtable Discussions</f>\n" 
+"Friday<x60><l114><f1>114RT</f></l>\n" \
+"14:15 - 15:15<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Expansion Technologies on Palm Devices"
+
+HEX "hSTR" ID 5102
+"<tTrack 2>" \
+"<ac><f2>New Platform Technologies</f></a>\n" \
+"<aj>In these sessions, you will get the details on future Palm OS® " \
+"revisions and capabilities—crucial information that can give you a real " \
+"competitive advantage.</a>\n"
+"<f2>Sessions</f>\n" \
+"Tuesday<x60><l200><f1>200</f></l>\n" \
+"11:00 - 12:00<x60>Hall C/D\n" \
+"New Palm OS® Technologies\n\n" \
+"Tuesday<x60><l201><f1>201</f></l>\n" \
+"14:45 - 15:45<x60>Hall C/D\n" \
+"New Technologies Details Session 1\n\n" \
+"Tuesday<x60><l202><f1>202</f></l>\n" \
+"16:00 - 17:00<x60>Hall C/D\n" \
+"New Technologies Details Session 2\n\n" \
+"Wednesday<x60><l203><f1>203</f></l>\n" \
+"10:00 - 11:00<x60>Hall C/D\n" \
+"New Technologies Details Session 3\n\n" \
+"Wednesday<x60><l204><f1>204</f></l>\n" \
+"15:45 - 16:45<x60>Ballroom A-B-G-H\n" \
+"New Features of Web Clipping\n\n" \
+"Wednesday<x60><l205><f1>205</f></l>\n" \
+"12:30 - 13:30<x60>Ballroom A-B-G-H\n" \
+"Bluetooth and Palm OS®\n\n" \
+"Thursday<x60><l206><f1>206</f></l>\n" \
+"17:30 - 18:30<x60>Ballroom A-B-G-H\n" \
+"The Next-Generation Palm OS®\n\n" \
+"Wednesday<x60><l211><f1>211</f></l>\n" \
+"17:00 - 18:00<x60>Ballroom A-B-G-H\n" \
+"New Technologies Details Session 4\n\n" \
+"<f2>Labs</f>\n" \
+"Wednesday<x60><l207><f1>207L</f></l>\n" \
+"15:45 - 16:45<x60>Large Lab\n" \
+"Hands-on Bluetooth Lab 1\n\n" \
+"Friday<x60><l208><f1>208L</f></l>\n" \
+"10:00 - 11:00<x60>Large Lab\n" \
+"Hands-on Bluetooth Lab 2\n\n" \
+"<f2>Roundtable Discussions</f>\n" 
+"Thursday<x60><l209><f1>209RT</f></l>\n" \
+"15:00 - 16:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Palm OS® Technologies Q&&A\n\n"
+"Thursday<x60><l210><f1>210RT</f></l>\n" \
+"16:15 - 17:15<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Palm OS® Technologies Q&&A"
+
+HEX "hSTR" ID 5103
+"<tTrack 3>" \
+"<ac><f2>Wireless Technologies</f></a>\n" \
+"<aj>Here are the business sessions, technology sessions, and labs " \
+"you're looking for to help you develop and market innovative wireless "\
+"applications for the Palm OS® platform. Topics include overviews " \
+"of Palm's wireless strategy, enabling technologies, and how to create " \
+"great web clipping applications.</a>\n"
+"<f2>Sessions</f>\n" \
+"Thursday<x60><l301><f1>301</f></l>\n" \
+"15:00 - 16:00<x60>Theater\n" \
+"Options for Wireless Development\n\n" \
+"Thursday<x60><l302><f1>302</f></l>\n" \
+"10:00 - 11:00<x60>Hall C/D\n" \
+"Enabling Technologies for Delivering Wireless Data\n\n" \
+"Thursday<x60><l304><f1>304</f></l>\n" \
+"16:15 - 17:15<x60>Room 203/204\n" \
+"Partnering with Palm.net®\n\n" \
+"Thursday<x60><l305><f1>305</f></l>\n" \
+"16:15 - 17:15<x60>Theater\n" \
+"Creating Web Clipping Applications\n\n" \
+"Thursday<x60><l307><f1>307</f></l>\n" \
+"13:45 - 14:45<x60>Theater\n" \
+"Adding Wireless Capability to a PRC\n\n" \
+"<f2>Labs</f>\n" \
+"Friday<x60><l308><f1>308L</f></l>\n" \
+"10:00 - 11:00<x60>Small Lab\n" \
+"Programming with the INetLib API"
+
+HEX "hSTR" ID 5104
+"<tTrack 4>" \
+"<ac><f2>Platform Tools</f></a>\n" \
+"<aj>Covering the wide range of development tools for the Palm OS® " \
+"platform—including tools for the enterprise—these sessions, labs, and " \
+"roundtables provide the information, insights, and practical experience " \
+"you are looking for. Sessions run the gamut from general and " \
+"enterprise tools...to Java, CodeWarrior, and GCC...to a very special " \
+"glimpse into the future.</a>\n"
+"<f2>Sessions</f>\n" \
+"Thursday<x60><l400><f1>400</f></l>\n" \
+"11:15 - 12:15<x60>Ballroom A-B-G-H\n" \
+"Platform Horizontal Tools\n\n" \
+"Wednesday<x60><l401><f1>401</f></l>\n" \
+"10:00 - 11:00<x60>Ballroom A-B-G-H\n" \
+"Tools for Enterprise Development\n\n" \
+"Wednesday<x60><l402><f1>402</f></l>\n" \
+"12:30 - 13:30<x60>Theater\n" \
+"Java®\231 Tools for the Palm OS®\n\n" \
+"Thursday<x60><l403><f1>403</f></l>\n" \
+"13:45 - 14:45<x60>Room 203/204\n" \
+"Inside CodeWarrior®\n\n" \
+"Friday<x60><l404><f1>404</f></l>\n" \
+"11:15 - 12:15<x60>Great America J\n" \
+"The GCC Toolchain\n\n" \
+"Friday<x60><l408><f1>408</f></l>\n" \
+"14:15 - 15:15<x60>Theater\n" \
+"Future Tools Roadmap\n\n" \
+"Friday<x60><l409><f1>409</f></l>\n" \
+"13:00 - 14:00<x60>Great America J\n" \
+"The Palm OS® Emulator\n\n" \
+"<f2>Labs</f>\n" \
+"Wednesday<x60><l410><f1>410L</f></l>\n" \
+"18:45 - 01:00<x60>Small Lab\n" \
+"Using the New Tools\n\n" \
+"Tuesday<x60><l411><f1>411L</f></l>\n" \
+"14:45 - 15:45<x60>Large Lab\n" \
+"Introduction to CodeWarrior® 1\n\n" \
+"Wednesday<x60><l412><f1>412L</f></l>\n" \
+"12:30 - 13:30<x60>Large Lab\n" \
+"Introduction to CodeWarrior® 2\n\n" \
+"Thursday<x60><l413><f1>413L</f></l>\n" \
+"13:45 - 14:45<x60>Large Lab\n" \
+"Rapid Application Tools\n\n" \
+"<f2>Roundtable Discussions</f>\n" 
+"Wednesday<x60><l414><f1>414RT</f></l>\n" \
+"15:45 - 16:45<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Tools for the Enterprise\n\n"
+"Thursday<x60><l415><f1>415RT</f></l>\n" \
+"17:30 - 18:30<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Palm OS® SDKs"
+
+HEX "hSTR" ID 5105
+"<tTrack 5>" \
+"<ac><f2>Optimizing Applications</f></a>\n" \
+"<aj>In these sessions and labs, you'll learn how to improve " \
+"your application's user interface, speed, memory, and " \
+"usability—as well as how to streamline the debugging process. " \
+"No matter how good your application, we'll give you ideas on " \
+"how you can make it even better.</a>\n"
+"<f2>Sessions</f>\n" \
+"Thursday<x60><l500><f1>500</f></l>\n" \
+"12:30 - 13:30<x60>Hall C/D\n" \
+"You Can't Optimize Too Soon\n\n" \
+"Friday<x60><l501><f1>501</f></l>\n" \
+"10:00 - 11:00<x60>Hall C/D\n" \
+"PalmDebugger: Taking Control\n\n" \
+"Thursday<x60><l502><f1>502</f></l>\n" \
+"10:00 - 11:00<x60>Ballroom A-B-G-H\n" \
+"Optimizing the User Interface\n\n" \
+"Friday<x60><l503><f1>503</f></l>\n" \
+"14:15 - 15:15<x60>Great America J\n" \
+"Optimizing Use of the Serial Manager\n\n" \
+"<f2>Labs</f>\n" \
+"Thursday<x60><l505><f1>505L</f></l>\n" \
+"15:00 - 16:00<x60>Large Lab\n" \
+"Optimizing Existing Applications\n\n" \
+"Tuesday<x60><l506><f1>506L</f></l>\n" \
+"16:00 - 17:00<x60>Large Lab\n" \
+"Optimizing for Compatibility Testing" 
+
+HEX "hSTR" ID 5106
+"<tTrack 6>" \
+"<ac><f2>Platform Solution Providers</f></a>\n" \
+"<aj>The Palm Economy is vibrant and growing, continually adding new " \
+"Palm OS® platform licensees and platform solution providers. " \
+"These important sessions will bring you up to date on the latest " \
+"business and technical offerings—and opportunities—from these key " \
+"industry players.</a>\n"
+"<f2>Sessions</f>\n" \
+"Tuesday<x60><l601><f1>601</f></l>\n" \
+"13:30 - 14:30<x60>Ballroom A-B-G-H\n" \
+"Palm - The Next-Generation of Palm Expansion Technologies: Get PluggedIn@Palm\n\n" \
+"Tuesday<x60><l602><f1>602</f></l>\n" \
+"14:45 - 15:45<x60>Ballroom A-B-G-H\n" \
+"Symbol Technologies\n\n" \
+"Wednesday<x60><l603><f1>603</f></l>\n" \
+"15:45 - 16:45<x60>Hall C/D\n" \
+"Handspring: Springboard Module Development\n\n" \
+"Wednesday<x60><l604><f1>604</f></l>\n" \
+"17:00 - 18:00<x60>Hall C/D\n" \
+"SONY Electronics, Inc\n\n" \
+"Thursday<x60><l605><f1>605</f></l>\n" \
+"13:45 - 14:45<x60>Ballroom A-B-G-H\n" \
+"IBM - Mobile e-Business Architecture\n\n" \
+"Thursday<x60><l606><f1>606</f></l>\n" \
+"17:30 - 18:30<x60>Room 203/204\n" \
+"Sun Microsystems\n\n" \
+"Tuesday<x60><l607><f1>607</f></l>\n" \
+"14:45 - 15:45<x60>Room 203/204\n" \
+"Computer Associates: Managing Palm Powered\231 Devices " \
+"&& Software in the Enterprise Environment\n\n" \
+"Tuesday<x60><l608><f1>608</f></l>\n" \
+"16:00 - 17:00<x60>Ballroom A-B-G-H\n" \
+"Sybase - Building Mobile && Wireless Solutions for " \
+"Palm Powered\231 Devices.\n\n" \
+"Thursday<x60><l609><f1>609</f></l>\n" \
+"15:00 - 16:00<x60>Ballroom A-B-G-H\n" \
+"Siebel Systems: Mobile eBusiness\n\n" \
+"Thursday<x60><l610><f1>610</f></l>\n" \
+"17:30 - 18:30<x60>Theater\n" \
+"Certicom: Security for Wireless Applications\n\n" \
+"Wednesday<x60><l611><f1>611</f></l>\n" \
+"17:00 - 18:00<x60>Room 203/204\n" \
+"Pumatech - Building Powerful Custom Solutions Using " \
+"Pumatech's MAP Architecture\n\n" \
+"Wednesday<x60><l612><f1>612</f></l>\n" \
+"15:45 - 16:45<x60>Theater\n" \
+"Aether Systems - Developing Palm OS® Applications " \
+"with Aether's ScoutBuilder.\n\n" \
+"Thursday<x60><l613><f1>613</f></l>\n" \
+"10:00 - 11:00<x60>Room 203/204\n" \
+"TRG: Hardware and Software Products for Palm OS® Developers\n\n" \
+"Thursday<x60><l614><f1>614</f></l>\n" \
+"15:00 - 16:00<x60>Room 203/204\n" \
+"Synchrologic - Tools for Overcoming Complex Corporate Data Sync Challenges\n\n" \
+"Thursday<x60><l615><f1>615</f></l>\n" \
+"16:15 - 17:15<x60>Ballroom A-B-G-H\n" \
+"Kyocera - Developer Program\n\n" \
+"Wednesday<x60><l616><f1>616</f></l>\n" \
+"11:15 - 12:15<x60>Great America J\n" \
+"Handango - Maximizing Your Profitability through Handandgo's Distribution Channels\n\n" \
+"Wednesday<x60><l617><f1>617</f></l>\n" \
+"12:30 - 13:30<x60>Great America J\n" \
+"Centurasoft: Manage the Unmanagable - What Happens after Mobilizing the Enterprise\n\n" \
+"Friday<x60><l618><f1>618</f></l>\n" \
+"10:00 - 11:00<x60>Room 203/204\n" \
+"Sponsor Session TBA\n\n" \
+"Friday<x60><l619><f1>619</f></l>\n" \
+"10:00 - 11:00<x60>Great America J\n" \
+"JP Systems\n\n" \
+"<f2>Labs</f>\n" \
+"Wednesday<x60><l620><f1>620L</f></l>\n" \
+"10:00 - 11:00<x60>Large Lab\n" \
+"Next-Generation Palm Product Technology\n\n" \
+"Wednesday<x60><l621><f1>621L</f></l>\n" \
+"17:00 - 18:00<x60>Large Lab\n" \
+"Programming for Handspring's Springboard Platform\n\n" \
+"Thursday<x60><l622><f1>622L</f></l>\n" \
+"16:15 - 17:15<x60>Large Lab\n" \
+"SONY Electronics, Inc\n\n" \
+"Thursday<x60><l623><f1>623L</f></l>\n" \
+"11:15 - 12:15<x60>Small Lab\n" \
+"Symbol Technologies 1\n\n" \
+"Thursday<x60><l624><f1>624L</f></l>\n" \
+"13:45 - 14:45<x60>Small Lab\n" \
+"Symbol Technologies 2\n\n" \
+"Thursday<x60><l625><f1>625L</f></l>\n" \
+"16:15 - 17:15<x60>Small Lab\n" \
+"Hands on with IBM Pervasive Computing Solutions\n\n" \
+"Tuesday<x60><l626><f1>626L</f></l>\n" \
+"16:00 - 17:00<x60>Small Lab\n" \
+"Computer Associates\n\n" \
+"Wednesday<x60><l628><f1>628L</f></l>\n" \
+"15:45 - 16:45<x60>Small Lab\n" \
+"Sponsor Lab Session TBA\n\n" \
+"Thursday<x60><l629><f1>629L</f></l>\n" \
+"17:30 - 18:30<x60>Small Lab\n" \
+"Sponsor Lab Session TBA\n\n" \
+"Tuesday<x60><l630><f1>630PL</f></l>\n" \
+"12:15 - 12:45<x60>Hall C/D\n" \
+"Beyond PIM - Taking Mobile Information Management to the Next Level\n\n" \
+"Tuesday<x60><l631><f1>631PL</f></l>\n" \
+"12:45 - 13:15<x60>Hall C/D\n" \
+"Symbol Technologies\n\n" \
+"Wednesday<x60><l632><f1>632PL</f></l>\n" \
+"11:15 - 11:45<x60>Hall C/D\n" \
+"Handspring, Inc\n\n" \
+"Wednesday<x60><l633><f1>633PL</f></l>\n" \
+"11:45 - 12:15<x60>Hall C/D\n" \
+"SONY Electronics, Inc\n\n" \
+"Thursday<x60><l634><f1>634PL</f></l>\n" \
+"11:15 - 11:45<x60>Hall C/D\n" \
+"IBM - Support for Palm OS® Applications\n\n" \
+"Thursday<x60><l635><f1>635PL</f></l>\n" \
+"11:45 - 12:15<x60>Hall C/D\n" \
+"Siebel: Handhels for the PalmOS® Platform"
+
+HEX "hSTR" ID 5107
+"<tTrack 7>" \
+"<ac><f2>Enterprise Development</f></a>\n" \
+"<aj>These sessions will show you how to capitalize on the many " \
+"opportunities for Palm OS® platform solutions in the enterprise. " \
+"You'll get new information on deploying mobile e-business solutions, " \
+"learn about Palm's Enterprise Solutions Architecture, and hear " \
+"experts share their experiences with enterprise-wide, handheld " \
+"technology. Whether you're a developer or enterprise manager, these " \
+"sessions will show you why the Palm OS is the platform of choice</a>\n"
+"<f2>Sessions</f>\n" \
+"Tuesday<x60><l700><f1>700</f></l>\n" \
+"11:00 - 12:00<x60>Theater\n" \
+"Mobilizing e-Business\n\n" \
+"Tuesday<x60><l701><f1>701</f></l>\n" \
+"13:30 - 14:30<x60>Theater\n" \
+"Palm's Enterprise Solutions Architecture\n\n" \
+"Tuesday<x60><l703><f1>703</f></l>\n" \
+"14:45 - 15:45<x60>Theater\n" \
+"Developing and Designing for the Enterprise\n\n" \
+"Tuesday<x60><l704><f1>704</f></l>\n" \
+"16:00 - 17:00<x60>Theater\n" \
+"Case Study 1: Palm@palm\n\n" \
+"Wednesday<x60><l707><f1>707</f></l>\n" \
+"12:30 - 13:30<x60>Room 203/204\n" \
+"Enterprise-Ready Handheld Management Solutions\n\n" \
+"Wednesday<x60><l705><f1>705P</f></l>\n" \
+"10:00 - 11:00<x60>Room 203/204\n" \
+"Case Study 2: Enterprise Customers\n\n" \
+"Wednesday<x60><l708><f1>708P</f></l>\n" \
+"17:00 - 18:00<x60>Theater\n" \
+"Beyond the Desktop: Securing the Enterprise\n\n" \
+"Wednesday<x60><l709><f1>709P</f></l>\n" \
+"15:45 - 16:45<x60>Room 203/204\n" \
+"Systems Integration Development and Implementation\n\n" \
+"<f2>Roundtable Discussions</f>\n" 
+"Wednesday<x60><l710><f1>710RT</f></l>\n" \
+"17:00 - 18:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Systems Intrgration Development and Inmplementation\n\n"
+"Thursday<x60><l711><f1>711RT</f></l>\n" \
+"10:00 - 11:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Government Solutions"
+
+HEX "hSTR" ID 5108
+"<tTrack 8>" \
+"<ac><f2>Vertical Markets</f></a>\n" \
+"<aj>These sessions and roundtable discussions offer uniquely useful " \
+"insights into the constantly expanding range of vertical market " \
+"opportunities for Palm OS® applications. Get the latest on such " \
+"markets as wireless content and e-commerce, education, finance, ges " \
+"and entertainment, healthcare, legal, music, and productivity.</a>\n"
+"<f2>Sessions</f>\n" \
+"Tuesday<x60><l800><f1>800</f></l>\n" \
+"11:00 - 12:00<x60>Ballroom A-B-G-H\n" \
+"Vertical Market Opportunities\n\n" \
+"Tuesday<x60><l803><f1>803</f></l>\n" \
+"14:45 - 15:45<x60>Great America J\n" \
+"Smart Moves: Opportunities in the Education Market\n\n" \
+"Thursday<x60><l806><f1>806</f></l>\n" \
+"12:30 - 13:30<x60>Room 203/204\n" \
+"Entertainment on Palm Powered\231 Devices\n\n" \
+"Thursday<x60><l807><f1>807</f></l>\n" \
+"16:15 - 17:15<x60>Great America J\n" \
+"Media on Palm Powered\231 Devices\n\n" \
+"Tuesday<x60><l811><f1>811</f></l>\n" \
+"13:30 - 14:30<x60>Great America J\n" \
+"The Case for Law on Palm Powered\231 Devices\n\n" \
+"Thursday<x60><l813><f1>813</f></l>\n" \
+"17:50 - 18:30<x60>Great America J\n" \
+"The Palm Productivity Market\n\n" \
+"Tuesday<x60><l814><f1>814</f></l>\n" \
+"11:15 - 13:15<x60>Great America J\n" \
+"CRM Overview\n\n" \
+"Wednesday<x60><l802><f1>802P</f></l>\n" \
+"10:00 - 11:00<x60>Great America J\n" \
+"e-Consumer and Content\n\n" \
+"Tuesday<x60><l805><f1>805P</f></l>\n" \
+"16:00 - 17:00<x60>Great America J\n" \
+"The Wealth of Opportunities in the Financial Services\n\n" \
+"Tuesday<x60><l808><f1>808P</f></l>\n" \
+"12:15 - 13:15<x60>Room 203/204\n" \
+"Healthcare Market Solutions and Industry Perspective\n\n" \
+"Tuesday<x60><l809><f1>809P</f></l>\n" \
+"13:30 - 14:30<x60>Room 203/204\n" \
+"Healthcare Deployment of Palm Powerered\231 Devices\n\n" \
+"Thursday<x60><l812><f1>812P</f></l>\n" \
+"10:00 - 11:00<x60>Great America J\n" \
+"Music and Audio Solutions on Palm Powered\231 Handhelds\n\n" \
+"<f2>Roundtable Discussions</f>\n" 
+"Tuesday<x60><l816><f1>816RT</f></l>\n" \
+"14:45 - 15:45<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Healthcare Connections\n\n"
+"Thursday<x60><l817><f1>817RT</f></l>\n" \
+"17:30 - 18:30<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Games and Entertainment\n\n"
+"Tuesday<x60><l818><f1>818RT</f></l>\n" \
+"16:00 - 17:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Education Markets\n\n"
+"Thursday<x60><l819><f1>819RT</f></l>\n" \
+"15:00 - 16:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Adding MIDI and mp3 Sound to Palm OS® Solutions"
+
+HEX "hSTR" ID 5109
+"<tTrack 9>" \
+"<ac><f2>International</f></a>\n" \
+"<aj>We've structured these sessions and roundtables to provide " \
+"vital information on developing world-class Palm OS® applications " \
+"for the booming international market. Get an overview of worldwide " \
+"market opportunities and learn about the European, Japanese, and " \
+"Asia Pacific Rim (APR) markets. And discover the design principles " \
+"and coding techniques for the global market.</a>\n"
+"<f2>Sessions</f>\n" \
+"Thursday<x60><l903><f1>903</f></l>\n" \
+"15:00 - 16:00<x60>Great America J\n" \
+"Designing and Coding Your Application for Global Use\n\n" \
+"Thursday<x60><l900><f1>900P</f></l>\n" \
+"11:15 - 12:15<x60>Great America J\n" \
+"Your New World of Opportunities\n\n" \
+"Thursday<x60><l901><f1>901P</f></l>\n" \
+"13:45 - 14:45<x60>Great America J\n" \
+"Winning in the Japan and Asia Pacific Rim Markets\n\n" \
+"Friday<x60><l902><f1>902P</f></l>\n" \
+"11:15 - 12:15<x60>Room 203/204\n" \
+"Succeeding in the European Market\n\n" \
+"<f2>Roundtable Discussions</f>\n" 
+"Friday<x60><l905><f1>905RT</f></l>\n" \
+"14:15 - 15:15<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Succeeding in the European Market\n\n"
+"Thursday<x60><l906><f1>906RT</f></l>\n" \
+"16:15 - 17:15<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Succeeding in the Japan/Asia Pacific Rim Market\n\n"
+"Friday<x60><l907><f1>907RT</f></l>\n" \
+"13:00 - 14:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Designing and Coding Your Application for Global Use"
+
+HEX "hSTR" ID 5110
+"<tTrack 10>" \
+"<ac><f2>Marketing and Support Services</f></a>\n" \
+"<aj>This track spotlights the many programs, resources, and " \
+"tools available from Palm to help you succeed—including " \
+"technical, marketing, business, and sales services. Find out " \
+"how to grow your business and revenues, and meet Palm's " \
+"strategic partners who are providing services, resources, and " \
+"tools to help you develop and market your Palm OS® products or " \
+"services.</a>\n"
+"<f2>Sessions</f>\n" \
+"Thursday<x60><l1000><f1>1000</f></l>\n" \
+"16:00 - 17:00<x60>Room 203/204\n" \
+"Overview of New Palm Partner Programs\n\n" \
+"Friday<x60><l1001><f1>1001</f></l>\n" \
+"13:00 - 14:00<x60>Theater\n" \
+"Protecting Your Trademarks and Intellectual Property\n\n" \
+"Friday<x60><l1004><f1>1004</f></l>\n" \
+"11:15 - 12:15<x60>Hall C/D\n" \
+"Palm Ventures\n\n" \
+"Wednesday<x60><l1002><f1>1002P</f></l>\n" \
+"10:00 - 11:00<x60>Theater\n" \
+"Palm, Inc. and Licensee Developer\n\n" \
+"<f2>Roundtable Discussions</f>\n" 
+"Wednesday<x60><l1003><f1>1003RT</f></l>\n" \
+"10:00 - 11:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Palm OS® Development and Marketing Support Services\n\n"
+"Tuesday<x60><l1005><f1>1005RT</f></l>\n" \
+"13:30 - 14:30<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"New and Growing Business Resources"
+
+/*
+ * KEY NOTES
+ */
+
+HEX "hSTR" ID 5200
+"<tKey Notes>" \
+"<l5201>Tuesday AM</l>\n" \
+"The Palm Economy: Harnessing the Potential\n" \
+"<l5202>Tuesday PM</l>\n" \
+"Exploring Next-Generation Handheld Solutions\n" \
+"<l5203>Wednesday AM</l>\n" \
+"The Palm Economy Meets the Enterprise\n" \
+"<l5204>Wednesday PM</l>\n" \
+"The Handheld Market Landscape\n" \
+"<l5205>Thursday AM</l>\n" \
+"The Future of Palm Platform Technology\n" \
+"<l5206>Friday AM</l>\n" \
+"Looking Toward Tomorrow"
+
+HEX "hSTR" ID 5201
+"<tTuesday AM>" \
+"<ac><f2>The Palm Economy: Harnessing the Potential</f></a>\n"
+"Tuesday AM<x80><l10><f1>10K</f></l>\n" \
+"Palm Economy Vision\n\n" \
+"Tuesday AM<x80><l15><f1>15K</f></l>\n" \
+"Palm Economy Direction && Opportunity" 
+
+HEX "hSTR" ID 5202
+"<tTuesday PM>" \
+"<ac><f2>Exploring Next-Generation Handheld Solution</f></a>\n"
+"Tuesday PM<x80><l20><f1>20K</f></l>\n" \
+"Next-Generation Handheld Solutions: Beyond Pilots and Organizers\n\n" \
+"Tuesday PM<x80><l25><f1>25K</f></l>\n" \
+"Exploring Next-Generation Solutions: The Panel" 
+
+HEX "hSTR" ID 5203
+"<tWednesday AM>" \
+"<ac><f2>The Palm Economy Meets the Enterprise</f></a>\n"
+"Wednesday AM<x80><l30><f1>30K</f></l>\n" \
+"The Impact of Palm within the Enterprise" 
+
+HEX "hSTR" ID 5204
+"<tWednesday PM>" \
+"<ac><f2>The Handheld Market Landscape</f></a>\n"
+"Wednesday PM<x80><l40><f1>40K</f></l>\n" \
+"Innovation in the Age of Creative Destruction\n\n" 
+"Wednesday PM<x80><l45><f1>45K</f></l>\n" \
+"Positioning the Palm OS®" 
+
+HEX "hSTR" ID 5205
+"<tThursday AM>" \
+"<ac><f2>The Future of Palm Platform Technology</f></a>\n"
+"Thursday AM<x80><l50><f1>50K</f></l>\n" \
+"The Palm Platform: The Power of Wireless\n\n" 
+"Thursday AM<x80><l55><f1>55K</f></l>\n" \
+"The Palm Platform: The Technology Roadmap" 
+
+HEX "hSTR" ID 5206
+"<tFriday AM>" \
+"<ac><f2>Looking Toward Tommorow</f></a>\n"
+"Friday AM<x80><l70><f1>70K</f></l>\n" \
+"Discovering America: The Interplay of Technology and Social Change" 
+
+/*
+ * SCHEDULE
+ */
+
+HEX "hSTR" ID 5300
+"<tSchedule>" \
+"<ac>The Sessions are provided here in chronological order for " \
+"your convenience, choose your day:</a>" \ 
+"<s>\n" \
+"<x30><l5301>Monday</l><x90>11-Dec\n" \
+"<x30><l5302>Tuesday</l><x90>12-Dec\n" \
+"<x30><l5303>Wednesday</l><x90>13-Dec\n" \
+"<x30><l5304>Thursday</l><x90>14-Dec\n" \
+"<x30><l5305>Friday</l><x90>15-Dec\n" \
+"<s>\n" \
+"<ac>Meet Aaron Ardiri at <l817>817RT</l></a>"
+
+HEX "hSTR" ID 5301
+"<tMonday>" \
+"<ac><f2>11-Dec-2000</f></u></a>" \
+"<s>\n" \
+"<x20><l1200><f1>1200PS</f></l>\n" \
+"09:00 - 17:00<x60>Theater\n" \
+"Technology Primer\n\n" \
+"<x20><l1300><f1>1300PS</f></l>\n" \
+"09:00 - 17:00<x60>Room 203/204\n" \
+"New Business Primer\n" \ 
+"<s>"
+
+HEX "hSTR" ID 5302
+"<tTuesday>" \
+"<ac><f2>12-Dec-2000</f></u></a>" \
+"<s>\n" \
+"<x20><l10><f1>10K</f></l>\n" \
+"09:00 - 09:25<x60>Hall C/D\n" \
+"Palm Economy Vision\n\n" \
+"<x20><l15><f1>15K</f></l>\n" \
+"09:25 - 10:30<x60>Hall C/D\n" \
+"Palm Econony Direction && Opportunity\n" \
+"<s>\n" \
+"<l5102><i2002></l><x20><l200><f1>200</f></l>\n" \
+"11:00 - 12:00<x60>Hall C/D\n" \
+"New Palm OS® Technologies\n\n" \
+"<l5107><i2007></l><x20><l700><f1>700</f></l>\n" \
+"11:00 - 12:00<x60>Theater\n" \
+"Mobilizing e-Business\n\n" \
+"<l5108><i2008></l><x20><l800><f1>800</f></l>\n" \
+"11:00 - 12:00<x60>Ballroom A-B-G-H\n" \
+"Vertical Market Opportunities\n" \
+"<s>\n" \
+"<l5106><i2006></l><x20><l630><f1>630PL</f></l>\n" \
+"12:15 - 12:45<x60>Hall C/D\n" \
+"Beyond PIM - Taking Mobile Information Management to the Next Level\n\n" \
+"<l5108><i2008></l><x20><l814><f1>814</f></l>\n" \
+"12:15 - 13:15<x60>Great America J\n" \
+"CRM Overview\n\n" \
+"<l5108><i2008></l><x20><l808><f1>808P</f></l>\n" \
+"12:15 - 13:15<x60>Room 203/204\n" \
+"Healthcare Market Solutions and Industry Perspective\n\n" \
+"<l5106><i2006></l><x20><l631><f1>631</f></l>\n" \
+"12:45 - 13:15<x60>Hall C/D\n" \
+"Symbol Technologies\n" \
+"<s>\n" \
+"<l5110><i2010></l><x20><l1005><f1>1005RT</f></l>\n" \
+"13:30 - 14:30<x60>Cafe Collaborate\n" \
+"<x60>Rooom 209/210\n" \
+"New and Growing Business Resources\n\n" \
+"<l5101><i2001></l><x20><l112><f1>112L</f></l>\n" \
+"13:30 - 14:30<x60>Small Lab\n" \
+"Creating C/C++ Conduits for Macintosh\231\n\n" \
+"<l5106><i2006></l><x20><l601><f1>601</f></l>\n" \
+"13:30 - 14:30<x60>Ballroom A-B-G-H\n" \
+"The Next-Generation of Palm Expansion Technologies: Get PluggedIn@palm\n\n" \
+"<l5108><i2008></l><x20><l811><f1>811</f></l>\n" \
+"13:30 - 14:30<x60>Great America J\n" \
+"The Case for Law on Palm Powered™ Devices\n\n" \
+"<l5107><i2007></l><x20><l701><f1>701</f></l>\n" \
+"13:30 - 14:30<x60>Theater\n" \
+"Palm’s Enterprise Solutions Architecture\n\n" \
+"<l5108><i2008></l><x20><l809><f1>809P</f></l>\n" \
+"13:30 - 14:30<x60>Room 203/204\n" \
+"Healthcare Deployment of Palm Powered™ Devices\n" \
+"<s>\n" \
+"<l5102><i2002></l><x20><l201><f1>201</f></l>\n" \
+"14:45 - 15:45<x60>Hall C/D\n" \
+"New Technologies Detail Session 1\n\n" \
+"<l5106><i2006></l><x20><l602><f1>602</f></l>\n" \
+"14:45 - 15:45<x60>Ballroom A-B-G-H\n" \
+"Symbol Technologies\n\n" \
+"<l5106><i2006></l><x20><l607><f1>607</f></l>\n" \
+"14:45 - 15:45<x60>Room 203/204\n" \
+"Computer Associates: Managing Palm Powered™ Devices " \
+"&& Software in the Enterprise Environment\n\n" \
+"<l5108><i2008></l><x20><l816><f1>816RT</f></l>\n" \
+"14:45 - 15:45<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Healthcare Connections\n\n" \
+"<l5104><i2004></l><x20><l411><f1>411L</f></l>\n" \
+"14:45 - 15:45<x60>Large Lab\n" \
+"Introduction to CodeWarrior® 1\n\n" \
+"<l5107><i2007></l><x20><l703><f1>703</f></l>\n" \
+"14:45 - 15:45<x60>Theater\n" \
+"Developing and Designing for the Enterprise\n\n" \
+"<l5108><i2008></l><x20><l803><f1>803</f></l>\n" \
+"14:45 - 15:45<x60>Great America J\n" \
+"Opportunities in the Education Market\n" \
+"<s>\n" \
+"<l5107><i2007></l><x20><l704><f1>704</f></l>\n" \
+"16:00 - 17:00<x60>Theater\n" \
+"Enterprise Case Study 1: Palm@palm\n\n" \
+"<l5102><i2002></l><x20><l202><f1>202</f></l>\n" \
+"16:00 - 17:00<x60>Hall C/D\n" \
+"New Technologies Detail Session 2\n\n" \
+"<l5106><i2006></l><x20><l626><f1>626L</f></l>\n" \
+"16:00 - 17:00<x60>Small Lab\n" \
+"Computer Associates\n\n" \
+"<l5106><i2006></l><x20><l608><f1>608</f></l>\n" \
+"16:00 - 17:00<x60>Ballroom A-B-G-H\n" \
+"Sybase - Building Mobile & Wireless Solutions for " \
+"Palm Powered™ Devices \n\n" \
+"<l5110><i2010></l><x20><l1000><f1>1000</f></l>\n" \
+"16:00 - 17:00<x60>Room 203/204\n" \
+"Overview of New Palm Partner Programs\n\n" \
+"<l5108><i2008></l><x20><l818><f1>818RT</f></l>\n" \
+"16:00 - 17:00<x60>Cafe Collaberate\n" \
+"<x60>Room 209/210\n" \
+"Education Markets\n\n" \
+"<l5105><i2005></l><x20><l506><f1>506L</f></l>\n" \
+"16:00 - 17:00<x60>Large Lab\n" \
+"Optimizing for Compatability Testing\n\n" \
+"<l5108><i2008></l><x20><l805><f1>805P</f></l>\n" \
+"16:00 - 17:00<x60>Great America J\n" \
+"The Wealth of Opportunities in the Financial Services Industry\n" \
+"<s>\n" \
+"<x20><l20><f1>20K</f></l>\n" \
+"17:15 - 17:45<x60>Hall C/D\n" \
+"Next-Generation Handheld Solutions: Beyond Pilots and Organizers\n\n" \
+"<x20><l25><f1>25K</f></l>\n" \
+"17:15 - 17:45<x60>Hall C/D\n" \
+"Exploring Next-Generation Handheld Solutions: The Panel\n" \
+"<s>" 
+
+HEX "hSTR" ID 5303
+"<tWednesday>" \
+"<ac><f2>13-Dec-2000</f></u></a>" \
+"<s>\n" \
+"<x20><l30><f1>30K</f></l>\n" \
+"08:30 - 09:30<x60>Hall C/D\n" \
+"TheImpact of Palm within the Enterprise\n" \
+"<s>\n" \
+"<l5106><i2006></l><x20><l620><f1>620L</f></l>\n" \
+"10:00 - 11:00<x60>Large Lab\n" \
+"Next-Generation Palm Product Technology\n\n" \
+"<l5110><i2010></l><x20><l1002><f1>1002P</f></l>\n" \
+"10:00 - 11:00<x60>Theater\n" \
+"Palm, Inc. and Licensee Developer Services\n\n" \
+"<l5110><i2010></l><x20><l1003><f1>1003RT</f></l>\n" \
+"10:00 - 11:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Palm OS® Development and Marketing Support Services\n\n" \
+"<l5102><i2002></l><x20><l203><f1>203</f></l>\n" \
+"10:00 - 11:00<x60>Hall C/D\n" \
+"New Technologies Detail Session 3\n\n" \
+"<l5104><i2004></l><x20><l401><f1>401</f></l>\n" \
+"10:00 - 11:00<x60>Ballroom A-B-G-H\n" \
+"Tools for Enterprise Development\n\n" \
+"<l5107><i2007></l><x20><l705><f1>705P</f></l>\n" \
+"10:00 - 11:00<x60>Room 203/204\n" \
+"Enterprise Case Study 2 - Enterprise Customers\n\n" \
+"<l5108><i2008></l><x20><l802><f1>802P</f></l>\n" \
+"10:00 - 11:00<x60>Great America J\n" \
+"e-Consumer and Content\n" \
+"<s>\n" \
+"<l5101><i2001></l><x20><l105><f1>105</f></l>\n" \
+"11:15 - 12:15<x60>Theater\n" \
+"Writing Visual Basic Conduits for Windows®\n\n" \
+"<l5101><i2001></l><x20><l110><f1>110L</f></l>\n" \
+"11:15 - 12:15<x60>Large Lab\n" \
+"Creating Visual Basic Conduits for Windows®\n\n" \
+"<l5106><i2006></l><x20><l632><f1>632PL</f></l>\n" \
+"11:15 - 11:45<x60>Hall C/D\n" \
+"Handspring, Inc\n\n" \
+"<l5106><i2006></l><x20><l616><f1>616</f></l>\n" \
+"11:15 - 12:15<x60>Great America J\n" \
+"Handango - Maximizing Your Profitability through " \
+"Handango's Distributution Channels\n\n" \
+"<l5106><i2006></l><x20><l633><f1>633PL</f></l>\n" \
+"11:45 - 12:15<x60>Hall C/D\n" \
+"SONY Electronics, Inc\n" \
+"<s>\n" \
+"<l5106><i2006></l><x20><l617><f1>617</f></l>\n" \
+"12:30 - 13:30<x60>Great America J\n" \
+"Centurasoft: Manage the Unmanageable - What Happens " \
+"after Mobilizing the Enterprise\n\n" \
+"<l5102><i2002></l><x20><l205><f1>205</f></l>\n" \
+"12:30 - 13:30<x60>Ballroom A-B-G-H\n" \
+"Bluetooth and Palm OS®\n\n" \
+"<l5104><i2004></l><x20><l402><f1>402</f></l>\n" \
+"12:30 - 13:30<x60>Theater\n" \
+"Java®™ Tools for the Palm OS®\n\n" \
+"<l5104><i2004></l><x20><l412><f1>412L</f></l>\n" \
+"12:30 - 13:30<x60>Large Lab\n" \
+"Intrudction to CodeWarrior® 2\n\n" \
+"<l5107><i2007></l><x20><l707><f1>707</f></l>\n" \
+"12:30 - 13:30<x60>Room 203/204\n" \
+"Enterprise-Ready Handheld Management Solutions\n" \
+"<s>\n" \
+"<x20><l40><f1>40K</f></l>\n" \
+"13:45 - 14:30<x60>Hall C/D\n" \
+"Innovation in an Age of Creative Destruction\n" \
+"<s>\n" \
+"<x20><l45><f1>45K</f></l>\n" \
+"14:30 - 15:15<x60>Hall C/D\n" \
+"Positioning the Palm OS®\n" \
+"<s>\n" \
+
+"<l5101><i2001></l><x20><l106><f1>106</f></l>\n" \
+"15:45 - 16:45<x60>Great America J\n" \
+"HotSync® Server Development\n\n" \
+"<l5106><i2006></l><x20><l628><f1>628L</f></l>\n" \
+"15:45 - 16:45<x60>Small Lab\n" \
+"Sponsor Lab Session TBA\n\n" \
+"<l5106><i2006></l><x20><l603><f1>603</f></l>\n" \
+"15:45 - 16:45<x60>Hall C/D\n" \
+"Handspring: Springboard Module Development\n\n" \
+"<l5106><i2006></l><x20><l612><f1>612</f></l>\n" \
+"15:45 - 16:45<x60>Theater\n" \
+"Aether Systems - Developing Palm OS® Applications " \
+"with Aether's ScoutBuilder\n\n" \
+"<l5102><i2002></l><x20><l204><f1>204</f></l>\n" \
+"15:45 - 16:45<x60>Ballroom A-B-G-H\n" \
+"New Features of Web Clipping\n\n" \
+"<l5102><i2002></l><x20><l207><f1>207L</f></l>\n" \
+"15:45 - 16:45<x60>Large Lab\n" \
+"Hands-on Bluetooth Lab 1\n\n" \
+"<l5104><i2004></l><x20><l414><f1>414RT</f></l>\n" \
+"15:45 - 16:45<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Tools for the Enterprise\n\n" \
+"<l5107><i2007></l><x20><l709><f1>709P</f></l>\n" \
+"15:45 - 16:45<x60>Room 203/204\n" \
+"Systems Integration Development and Implementation\n" \
+"<s>\n" \
+"<l5106><i2006></l><x20><l621><f1>621L</f></l>\n" \
+"17:00 - 18:00<x60>Large Lab\n" \
+"Programming for Handspring's Springboard Platform\n\n" \
+"<l5102><i2002></l><x20><l211><f1>211</f></l>\n" \
+"17:00 - 18:00<x60>Ballroom A-B-G-H\n" \
+"New Technologies Detail Session 4\n\n" \
+"<l5106><i2006></l><x20><l604><f1>604</f></l>\n" \
+"17:00 - 18:00<x60>Hall C/D\n" \
+"SONY Electronics, Inc\n\n" \
+"<l5106><i2006></l><x20><l611><f1>611</f></l>\n" \
+"17:00 - 18:00<x60>Room 203/204\n" \
+"Pumatech - Building Powerful Custom Solutions Using " \
+"Pumatech's MAP Architecture \n\n" \
+"<l5107><i2007></l><x20><l710><f1>710RT</f></l>\n" \
+"17:00 - 18:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Systems Integration Development and Implementation\n\n" \
+"<l5107><i2007></l><x20><l708><f1>708P</f></l>\n" \
+"17:00 - 18:00<x60>Theater\n" \
+"Beyond the Desktop: Securing the Enterprise\n" \
+"<s>\n" \
+"<l5104><i2004></l><x20><l410><f1>410L</f></l>\n" \
+"18:45 - 01:00<x60>Small Lab\n" \
+"Using the New Tools\n" \
+"<s>"
+
+HEX "hSTR" ID 5304
+"<tThursday>" \
+"<ac><f2>14-Dec-2000</f></u></a>" \
+"<s>\n" \
+"<x20><l50><f1>50K</f></l>\n" \
+"08:30 - 09:10<x60>Hall C/D\n" \
+"The Palm Platform: The Power of Wirelesss\n" \
+"<s>\n" \
+"<x20><l55><f1>55K</f></l>\n" \
+"09:10 - 09:40<x60>Hall C/D\n" \
+"The Palm Platform: The Technology Roadmap\n" \
+"<s>\n" \
+"<l5101><i2001></l><x20><l100><f1>100</f></l>\n" \
+"10:00 - 11:00<x60>Ballroom A-B-G-H\n" \
+"Zen of Palm\n\n" \
+"<l5107><i2007></l><x20><l711><f1>711RT</f></l>\n" \
+"10:00 - 11:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Government Solutions\n\n" \
+"<l5106><i2006></l><x20><l613><f1>613</f></l>\n" \
+"10:00 - 11:00<x60>Room 203/204\n" \
+"TRG: Hardware and Software Products for Palm OS® Developers\n\n" \
+"<l5108><i2008></l><x20><l812><f1>812P</f></l>\n" \
+"10:00 - 11:00<x60>Great America J\n" \
+"Music and Audio Solutions on Palm Powered™ Handhelds\n\n" \
+"<l5103><i2003></l><x20><l302><f1>302</f></l>\n" \
+"10:00 - 11:00<x60>Hall C/D\n" \
+"Enabling Technologies for Delivering Wireless Data\n\n" \
+"<l5105><i2005></l><x20><l502><f1>502</f></l>\n" \
+"10:00 - 11:00<x60>Ballroom A-B-G-H\n" \
+"Optimizing the User Interface\n" \
+"<s>\n" \
+"<l5106><i2006></l><x20><l634><f1>634PL</f></l>\n" \
+"11:15 - 11:45<x60>Hall C/D\n" \
+"IBM - Support for Palm OS® Applications\n\n" \
+"<l5106><i2006></l><x20><l623><f1>623L</f></l>\n" \
+"11:15 - 12:15<x60>Small Lab\n" \
+"Symbol Technologies 1\n\n" \
+"<l5109><i2009></l><x20><l900><f1>900P</f></l>\n" \
+"11:15 - 12:15<x60>Great America J\n" \
+"Your New World of Opportunities\n\n" \
+"<l5104><i2004></l><x20><l400><f1>400</f></l>\n" \
+"11:15 - 12:15<x60>Ballroom A-B-G-H\n" \
+"Platform Horizontal Tools\n\n" \
+"<l5106><i2006></l><x20><l635><f1>635PL</f></l>\n" \
+"11:45 - 12:15<x60>Hall C/D\n" \
+"Siebel: Handhelds for the PalmOS® Platform\n" \
+"<s>\n" \
+"<l5101><i2001></l><x20><l108><f1>108</f></l>\n" \
+"12:30 - 13:30<x60>Theater\n" \
+"Writing the Non-Simple Application\n\n" \
+"<l5105><i2005></l><x20><l500><f1>500</f></l>\n" \
+"12:30 - 13:30<x60>Hall C/D\n" \
+"You Can't Optimize Too Soon\n\n" \
+"<l5108><i2008></l><x20><l806><f1>806</f></l>\n" \
+"12:30 - 13:30<x60>Room 203/204\n" \
+"Entertainment on Palm Powered\231 Devices\n" \
+"<s>\n" \
+"<l5106><i2006></l><x20><l624><f1>624L</f></l>\n" \
+"13:45 - 14:45<x60>Small Lab\n" \
+"Symbol Technologies 2\n\n" \
+"<l5106><i2006></l><x20><l605><f1>605</f></l>\n" \
+"13:45 - 14:45<x60>Ballroom A-B-G-H\n" \
+"IBM - Mobile e-Business Architecture\n\n" \
+"<l5109><i2009></l><x20><l901><f1>901P</f></l>\n" \
+"13:45 - 14:45<x60>Great America J\n" \
+"Winning in the Japan and Asia Pacific Rim Markets\n\n" \
+"<l5103><i2003></l><x20><l307><f1>307</f></l>\n" \
+"13:45 - 14:45<x60>Theater\n" \
+"Adding Wireless Capability to a PRC\n\n" \
+"<l5104><i2004></l><x20><l403><f1>403</f></l>\n" \
+"13:45 - 14:45<x60>Room 203/204\n" \
+"Inside CodeWarrior®\n\n" \
+"<l5104><i2004></l><x20><l413><f1>413L</f></l>\n" \
+"13:45 - 14:45<x60>Large Lab\n" \
+"Rapid Application Tools\n" \
+"<s>\n" \
+"<l5108><i2008></l><x20><l819><f1>819RT</f></l>\n" \
+"15:00 - 16:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Adding MIDI and mp3 Sound to Palm OS® Solutions\n\n" \
+"<l5101><i2001></l><x20><l111><f1>111L</f></l>\n" \
+"15:00 - 16:00<x60>Small Lab\n" \
+"Creating C/C++ Conduits for Windows®\n\n" \
+"<l5106><i2006></l><x20><l609><f1>609</f></l>\n" \
+"15:00 - 16:00<x60>Ballroom A-B-G-H\n" \
+"Siebel Systems: Mobile eBusiness\n\n" \
+"<l5106><i2006></l><x20><l614><f1>614</f></l>\n" \
+"15:00 - 16:00<x60>Room 203/204\n" \
+"Synchrologic - Tools for Overcoming Complex Corporate Data Sync Challenges\n\n" \
+"<l5109><i2009></l><x20><l903><f1>903</f></l>\n" \
+"15:00 - 16:00<x60>Grand America J\n" \
+"Designing and Coding Your Application for Global Use\n\n" \
+"<l5102><i2002></l><x20><l209><f1>209RT</f></l>\n" \
+"15:00 - 16:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"ROUND TABLE: Palm OS® Technologies Q&A\n\n" \
+"<l5103><i2003></l><x20><l301><f1>301</f></l>\n" \
+"15:00 - 16:00<x60>Theater\n" \
+"Options for Wireless Development\n\n" \
+"<l5105><i2005></l><x20><l505><f1>505L</f></l>\n" \
+"15:00 - 16:00<x60>Large Lab\n" \
+"Optimizing Existing Applications\n" \
+"<s>\n" \
+"<l5106><i2006></l><x20><l615><f1>615</f></l>\n" \
+"16:15 - 17:15<x60>Ballroom A-B-G-H\n" \
+"Kyocera - Developer Program\n\n" \
+"<l5106><i2006></l><x20><l622><f1>622L</f></l>\n" \
+"16:15 - 17:15<x60>Large Lab\n" \
+"SONY Electronics, Inc\n\n" \
+"<l5106><i2006></l><x20><l625><f1>625L</f></l>\n" \
+"16:15 - 17:15<x60>Small Lab\n" \
+"Hands on with IBM Pervasive Computing Solutions\n\n" \
+"<l5109><i2009></l><x20><l906><f1>906RT</f></l>\n" \
+"16:15 - 17:15<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Succeeding in the Japan/Asia Pacific Rim Market\n\n" \
+"<l5102><i2002></l><x20><l210><f1>210RT</f></l>\n" \
+"16:15 - 17:15<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Palm OS® Technologies Q&A\n\n" \
+"<l5103><i2003></l><x20><l304><f1>304</f></l>\n" \
+"16:15 - 17:15<x60>Room 203/204\n" \
+"Partnering with Palm.net®\n\n" \
+"<l5103><i2003></l><x20><l305><f1>305</f></l>\n" \
+"16:15 - 17:15<x60>Theater\n" \
+"Creating Web Clipping Applications\n\n" \
+"<l5108><i2008></l><x20><l807><f1>807</f></l>\n" \
+"16:15 - 17:15<x60>Great America J\n" \
+"Media on Palm Powered™ Devices\n" \
+"<s>\n" \
+"<l5101><i2001></l><x20><l113><f1>113L</f></l>\n" \
+"17:30 - 18:30<x60>Large Lab\n" \
+"Hot Sync® Server Development\n\n" \
+"<l5106><i2006></l><x20><l629><f1>629L</f></l>\n" \
+"17:30 - 18:30<x60>Small Lab\n" \
+"Sponsor Lab Session TBA\n\n" \
+"<l5106><i2006></l><x20><l606><f1>606</f></l>\n" \
+"17:30 - 18:30<x60>Room 203/204\n" \
+"Sun Microsystems\n\n" \
+"<l5106><i2006></l><x20><l610><f1>610</f></l>\n" \
+"17:30 - 18:30<x60>Theater\n" \
+"Certicom: Security for Wireless Applications\n\n" \
+"<l5108><i2008></l><x20><l817><f1>817RT</f></l>\n" \
+"17:30 - 18:30<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Games and Entertainment\n\n" \
+"<l5102><i2002></l><x20><l206><f1>206</f></l>\n" \
+"17:30 - 18:30<x60>Ballroom A-B-G-H\n" \
+"The Next-Generation Palm OS®\n\n" \
+"<l5104><i2004></l><x20><l415><f1>415RT</f></l>\n" \
+"17:30 - 18:30<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Palm OS® SDKs\n" \
+"<s>"
+
+HEX "hSTR" ID 5305
+"<tFriday>" \
+"<ac><f2>15-Dec-2000</f></u></a>" \
+"<s>\n" \
+"<x20><l70><f1>70K</f></l>\n" \
+"08:30 - 09:40<x60>Hall C/D\n" \
+"Discovering America:The Interplay of Technology and Social Change\n\n" \
+"<s>\n" \
+"<l5101><i2001></l><x20><l103><f1>103</f></l>\n" \
+"10:00 - 11:00<x60>Theater\n" \
+"Adding Communications to Your Application\n\n" \
+"<l5101><i2001></l><x20><l101><f1>101</f></l>\n" \
+"10:00 - 11:00<x60>Ballroom A-B-G-H\n" \
+"OS && Device Cross-Compatibility\n\n" \
+"<l5106><i2006></l><x20><l618><f1>618</f></l>\n" \
+"10:00 - 11:00<x60>Room 203/204\n" \
+"Sponsor Session TBA\n\n" \
+"<l5106><i2006></l><x20><l619><f1>619</f></l>\n" \
+"10:00 - 11:00<x60>Great America J\n" \
+"JP Systems\n\n" \
+"<l5102><i2002></l><x20><l208><f1>208L</f></l>\n" \
+"10:00 - 11:00<x60>Large Lab\n" \
+"Hands-on Bluetooth Lab 2\n\n" \
+"<l5103><i2003></l><x20><l308><f1>308L</f></l>\n" \
+"10:00 - 11:00<x60>Small Lab\n" \
+"Programming with the INetLib API\n\n" \
+"<l5105><i2005></l><x20><l501><f1>501</f></l>\n" \
+"10:00 - 11:00<x60>Hall C/D\n" \
+"PalmDebugger: Taking Control\n" \
+"<s>\n" \
+"<l5101><i2001></l><x20><l107><f1>107</f></l>\n" \
+"11:15 - 12:15<x60>Theater\n" \
+"Developing Full-Motion Animation\n\n" \
+"<l5101><i2001></l><x20><l109><f1>109L</f></l>\n" \
+"11:15 - 12:15<x60>Large Lab\n" \
+"Debugging Communications\n\n" \
+"<l5110><i2010></l><x20><l1004><f1>1004</f></l>\n" \
+"11:15 - 12:15<x60>Hall C/D\n" \
+"Palm Ventures\n\n" \
+"<l5109><i2009></l><x20><l902><f1>902P</f></l>\n" \
+"11:15 - 12:15<x60>Room 203/204\n" \
+"Succeeding in the European Market\n\n" \
+"<l5104><i2004></l><x20><l404><f1>404</f></l>\n" \
+"11:15 - 12:15<x60>Great America J\n" \
+"The GCC Toolchain\n" \
+"<s>\n" \
+"<l5101><i2001></l><x20><l102><f1>102</f></l>\n" \
+"13:00 - 14:00<x60>Room 203/204\n" \
+"Developing Hardware Add-ons and Drivers\n\n" \
+"<l5110><i2010></l><x20><l1001><f1>1001</f></l>\n" \
+"13:00 - 14:00<x60>Theater\n" \
+"Protecting Your Trademarks and Other Intellectual Property\n\n" \
+"<l5109><i2009></l><x20><l907><f1>907RT</f></l>\n" \
+"13:00 - 14:00<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Designing and Coding Your Application for Global Use\n\n" \
+"<l5104><i2004></l><x20><l409><f1>409</f></l>\n" \
+"13:00 - 14:00<x60>Great America J\n" \
+"The Palm OS® Emulator\n" \
+"<s>\n" \
+"<l5101><i2001></l><x20><l114><f1>114RT</f></l>\n" \
+"14:15 - 15:15<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Expansion Technologies on Palm OS® Devices\n\n" \
+"<l5109><i2009></l><x20><l905><f1>905RT</f></l>\n" \
+"14:15 - 15:15<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n" \
+"Succeeding in the European Market\n\n" \
+"<l5104><i2004></l><x20><l408><f1>408</f></l>\n" \
+"13:00 - 14:00<x60>Theater\n" \
+"Future Tools Roadmap\n\n" \
+"<l5105><i2005></l><x20><l503><f1>504</f></l>\n" \
+"13:00 - 14:00<x60>Great America J\n" \
+"Optimizing Use of the Serial Manager.\n" \
+"<s>"
+
+/*
+ * SOLUTIONS PAVILION
+ */
+
+HEX "hSTR" ID 5400
+"<tSolutions Pavlilion>" \
+"<aj>Stop by the Solutions Pavilion for a first look at applications, " \
+"solutions, and Palm Powered™ devices from Palm OS® platform licensees—and " \
+"more than 75 Palm OS platform partners. Get an even greater " \
+"understanding of the Palm OS platform's extraordinary benefits in the " \
+"enterprise and consumer markets. And learn how you can leverage the " \
+"platform to create your own solutions and tap new markets.</a>\n"\
+"<u>Solution Pavilion hours:</u>\n\n" \
+"<x8>Tuesday<x80>18:15 - 21:00\n" \
+"<x8>Wednesday<x80>12:00 - 18:00\n" \
+"<x8>Thursday<x80>12:00 - 18:30"
+
+/*
+ * EVENTS AND FEATURES
+ */
+
+HEX "hSTR" ID 5500
+"<tEvents and Features>" \
+"<f2>Special Events</f>\n" \
+"<f1>Monday Evening</f>\n" \
+"18:00 - 21:00\n" \
+"<aj>Welcome reception for conference and primer series attendees.</a>\n" \
+"<f1>Tuesday Evening</f>\n"
+"18:15 - 21:00\n" \
+"<aj>The PalmSource solutions pavilion opens with a reception for PalmSource " \
+"attendees.</a>\n" \
+"<f1>Wednesday Evening</f>\n"
+"<aj>Free time! Join your friends for dinner, network with colleagues, or " \
+"take advantage of any special activities hosted by PalmSource sponsors " \
+"and exhibitors.</a>\n" \
+"<f1>Thursday Evening</f>\n"
+"<aj>Don't miss the big celebration - a fun, exciting evening with great " \
+"food, music and more!</a>\n" \
+"<f2>Open Labs</f>\n" \
+"<aj>You're sure to enjoy - and benefit from - the late-night open labs. " \
+"Try out new concepts you learn throughout the conference. Go over " \
+"specific application problems with Palm's Developer Technical Support " \
+"Engineers and other experts. Consult with engineers about design, UI " \
+"and other important issues. And get answers to your specific questions " \
+"about Palm OS® platform development.</a>\n" \
+"<f2>Developer Store</f>\n" \
+"<aj>PalmSource attendies will have the opportunity to purchase a variety " \
+"of developer bundles from Palm and participating Palm OS platform " \
+"licensees in the PalmSource Developer Store. Bundles will include a " \
+"Palm Powered\231 device, an SDK, and other tools.</a>\n" \
+"<aj>The content and pricing of the developer bundles will not be announced " \
+"until 4pm on Monday, December 11 at the Santa Clara Convention Center, " \
+"when the early arrivals Welcome Reception begins.</a>\n" \
+"-<x6>supplies are limited to one item\n" \
+"<x6>per attendee.\n" \
+"-<x6>only available while supplies last\n" \
+"-<x6>purchases with cash (US dollar),\n"\
+"<x6>travellers checks or major credit\n" \
+"<x6>cards. No personal or business\n" \
+"<x6>checks will be accepted.\n" \
+"-<x6>attendees must present their\n" \
+"<x6>complete conference badge.\n\n" \
+"<u>Store hours:</u>\n\n" \
+"<x8>Monday<x80>17:30 - 21:00\n" \
+"<x8>Tuesday<x80>11:00 - 17:00\n" \
+"<x8>Wednesday<x80>10:00 - 18:00\n" \
+"<x8>Thursday<x80>10:00 - 18:00\n" \
+"<x8>Friday<x80>10:00 - 15:00"
+
+/*
+ * PEOPLE
+ */
+
+BITMAPFAMILY ID 6000 
+  "" "images/people/yankowski.bmp" "images/people/yankowski.bmp" COMPRESS
+
+HEX "hSTR" ID 6000
+"<tCarl Yankowski>" \
+"<il6000></i><u>Chief Executive Officer</u>\n" \
+"Palm, Inc\n\n" \
+"<aj>Carl Tankowski joined Palm, Inc. as CEO in December 1999. His " \
+"charter is to build on Palm's worldwide leadership in the handheld " \
+"computing market, including building new markets, extending the " \
+"company's existing business, ensuring operational excellence and " \
+"creating continued brand value.\n\n" \
+"Carl brings to Palm more than 25 years of marketing and executive " \
+"management expertise in growing businesses at leading companies. " \
+"Immediately prior to Palm, Carl was CEO of Reebok Unlimited, where " \
+"he led the worldwide Reebok-brand apparel business, a multi-billion " \
+"dollar enterprise that is currently ranked second in its industry. " \
+"During his tenure there, he successfully reorganized the company for " \
+"growth, streamlined operations and improved profitability.\n\n" \
+"Previously, Carl spent five years at Sony Electronics, Inc. as " \
+"President and COO. He was operationally responsible for the development " \
+"and launch of numerous successful products in growing markets and new " \
+"business categories for Sony, including DVD, digital imaging and " \
+"personal computers. He helped drive revenues from more than $6 billion " \
+"to more than $10 billion. Under his guidance, the company was named " \
+"the most-respected brand name in America in 1995 and 1997.\n\n" \
+"In an earlier position as Chairman of Polaroid's Asia Pacific Region, " \
+"Carl led strong revenue and profit growth in the business imaging market " \
+"globally and set up the company's Asia Pacific headquarters. He has held " \
+"marketing and strategic leadership positions in several prestigious " \
+"technology and consumer-products companies, including General Electric, " \
+"Memorex and Proctor and Gamble.\n\n" \
+"Carl holds both a Bachelor of Science in Electrical Engineering and " \
+"a Bachelor of Science in Management from MIT.</a>"
+
+BITMAPFAMILY ID 6001 
+  "" "images/people/acostalopez.bmp" "images/people/acostalopez.bmp" COMPRESS
+
+HEX "hSTR" ID 6001
+"<tGabriel Acosta-Lopez>" \
+"<il6001></i><u>Senior Director</u>\n" \
+"Platform Alliance && Partner Services Palm, Inc\n\n" \
+"<aj>As senior director of Platform Alliance & Partner Services, " \
+"Gabriel Acosta-Lopez is responsible for Palm OS® platform business " \
+"development, market development, developer alliances, technical support, " \
+"development education and professional services, as well as the design " \
+"and planning of PalmSource\231 events worldwide. Platform Alliance && " \
+"Partner Services was created by Gabriel to provide technical resources, " \
+"training, technical issue resolutions, and business and marketing " \
+"support to Palm OS platform Solution Providers.\n\n" \
+"Before coming to Palm, Gabriel spent eight years at Apple Computer, " \
+"Inc., where he held a number of positions, ultimately that of senior " \
+"manager of the Newton Systems Group. In that role, he managed the " \
+"organization that assisted VARs, SIs and ISVs in the development of " \
+"whole-product solutions based on the Newton MessagePad and another " \
+"that developed training and support for Apple's third-party developers " \
+"and licensees.\n\n" \
+"Gabriel holds an M.A. in Educational Technology from San Diego State " \
+"University, has completed all course work for an M.S. in Computer Science " \
+"from Centro de Investigacion Cientifica y Educacion Superior de Ensenada, " \
+"and holds a B.A. in Management Information Systems from Centro de " \
+"Enseñanza Técnica y Superior.</a>"
+
+BITMAPFAMILY ID 6002 
+  "" "images/people/chahil.bmp" "images/people/chahil.bmp" COMPRESS
+
+HEX "hSTR" ID 6002
+"<tSatjiv Chahil>" \
+"<il6002></i><u>Cheif Marketing Officer</u>\n" \
+"Palm, Inc\n\n" \
+"<aj>As chief marketing officer, Satjiv Chahil is responsible for " \
+"defining Palm's brand strategy and executing customer-focused marketing " \
+"programs. Satjiv brings to Palm a reputation for creating and implementing " \
+"high-impact marketing campaigns to achieve dramatic results consistent " \
+"with the goals of high-tech corporations. \n\n" \
+"Satjiv also brings over 25 years of high-tech marketing experience gained " \
+"at IBM, Xerox, Apple and Sony. He led the team that launched Sony's " \
+"convergence strategy, including VAIO notebooks, digital photography/imaging " \
+"and e-business. His creativity was key to Sony rapidly becoming a market " \
+"leader in each of these new business categories. \n\n" \
+"Prior to Sony, as Apple's executive vice president of World Wide Marketing, " \
+"Satjiv was credited with keeping the Apple brand alive during its most " \
+"challenging period. He was also acknowledged for establishing Apple as the " \
+"number one brand in Japan. As the founding general manager of Apple's New " \
+"Media, Internet and Entertainment division he established Apple as the " \
+"dominant multimedia creative platform, as well as the premiere Internet " \
+"authoring platform.\n\n" \
+"Before Apple, Satjiv held various international sales, marketing and general " \
+"management positions at IBM and Xerox PARC.</a>"
+
+BITMAPFAMILY ID 6003 
+  "" "images/people/mcginn.bmp" "images/people/mcginn.bmp" COMPRESS
+
+HEX "hSTR" ID 6003
+"<tRobert McGinn>" \
+"<il6003></i><u>Professor of Management Science and Engineering; Co-Chair,</u>\n" \
+"Science, Technology, and Society Program, Stanford University\n\n" \
+"<aj>Robert McGinn is Professor in the Department of Management Science " \
+"and Engineering and co-chair of the Science, Technology, and Society " \
+"Program (STS) at Stanford University. He earned a B.S. from Stevens " \
+"Institute of Technology in New Jersey, and an M.S. in mathematics and Ph.D. " \
+"in philosophy and humanities at Stanford. Except for a year at Bell Labs " \
+"in 1978-79, Robert has taught at Stanford since 1971, when the Values, " \
+"Technology, and Society Program—now, STS—was founded. He teaches popular " \
+"courses on technology in society and on applied ethics, with special " \
+"interest in issues raised by recent developments in science and technology. " \
+"Recipient of a number of teaching awards at Stanford, Robert has published " \
+"a widely used textbook on science, technology, and society, and a number of " \
+"scholarly articles on technology and ethics. In his spare time, he enjoys " \
+"classical music and opera, Spain and Italy, and basketball and cross-country " \
+"skiing. From 1973-1984 he played guitar Saturday mornings with a Sicilian " \
+"mandolinist and a Sardinian guitarist at Caffe Trieste in the North Beach " \
+"area of San Francisco.</a>"
+
+BITMAPFAMILY ID 6004 
+  "" "images/people/kessler.bmp" "images/people/kessler.bmp" COMPRESS
+
+HEX "hSTR" ID 6004
+"<tAlan Kessler>" \
+"<il6004></i><u>Chief Operations Officer</u>\n" \
+"Platform && Products Palm, Inc\n\n" \
+"<aj>Alan Kessler was named to the Palm, Inc. executive team in June " \
+"1999. As COO, Alan's charter is to extend Palm's leadership in the " \
+"worldwide handheld computing market.\n\n" \
+"A 13-year veteran of 3Com Corporation, Alan was most recently senior " \
+"vice president of 3Com's global customer service organization. His " \
+"responsibilities included customer service for all of 3Com's served " \
+"market solutions including Large Enterprise, Small Office/Home Office, " \
+"and Consumer customers. Prior to his worldwide service role, he was " \
+"responsible for 3Com's worldwide Enterprise Sales and Service " \
+"organization.\n\n" \
+"Alan held a variety of sales and marketing management positions at " \
+"3Com, including vice president of 3Com's North America System Sales, " \
+"vice president and general manager for 3Com's internetworking product " \
+"group, and a director of marketing with responsibility for key network " \
+"communication product lines. \n\n" \
+"Alan holds an MBA from the University of California at Berkeley and " \
+"a degree in Business, with honors, from San Jose State University.</a>"
+
+BITMAPFAMILY ID 6005 
+  "" "images/people/saffo.bmp" "images/people/saffo.bmp" COMPRESS
+
+HEX "hSTR" ID 6005
+"<tPaul Saffo>" \
+"<il6005></i><u>Director and Roy Amara Fellow Institute for the " \
+"Future</u>\n\n" \
+"<aj>Paul is a technology forecaster studying long-term information " \
+"technology trends and their impact on business and society. His essays " \
+"have appeared in numerous publications, including The Harvard Business " \
+"Review, Wired Magazine, Civilization Magazine, The Los Angeles Times, " \
+"The New York Times, and Fortune Magazine, as well as other more " \
+"specialized periodicals. Paul is the author of Dreams in Silicon Valley " \
+"and The Road From Trinity, both of which are available in Japan.\n\n" \
+"He was a 1997 McKinsey Judge for the Harvard Business Review, and in the " \
+"same year was named one of one hundred 'Global Leaders for Tomorrow' by " \
+"the World Economic Forum. Paul serves on a variety of boards and advisory " \
+"panels, including the AT&&T Technology Advisory Board, the World Economic " \
+"Forum Global Issues Group, and the Stanford Law School Advisory Council " \
+"on Science, Technology and Society. Paul holds degrees from Harvard " \
+"College, Cambridge University, and Stanford University. IFTF is a " \
+"30-year-old foundation that provides strategic planning and forecasting " \
+"services to major corporations and government agencies.</a>"
+
+BITMAPFAMILY ID 6006 
+  "" "images/people/mace.bmp" "images/people/mace.bmp" COMPRESS
+
+HEX "hSTR" ID 6006
+"<tMichael Mace>" \
+"<il6006></i><u>Chief Competitive Officer && Vice President</u>\n" \
+"Product Planning Palm, Inc\n\n" \
+"<aj>As chief competitive officer for Palm, Inc., Michael Mace runs " \
+"the team tasked with understanding Palm's competitive environment " \
+"and predicting future developments in handheld computing and its " \
+"associated markets. Michael also supervises Palm's new product " \
+"planning process. Prior to joining Palm, he was Vice President of " \
+"Marketing for Softbook Press, and Director of Worldwide Marketing " \
+"for Silicon Graphics' Windows products division. Previously, he " \
+"spent ten years in a variety of marketing leadership positions at " \
+"Apple Computer. He has also been an independent software developer " \
+"and a journalist. Michael holds a Political Science degree from UCLA.</a>"
+
+BITMAPFAMILY ID 6007 
+  "" "images/people/cottle.bmp" "images/people/cottle.bmp" COMPRESS
+
+HEX "hSTR" ID 6007
+"<tBarry Cottle>" \
+"<il6007></i><u>Chief Operations Officer</u>\n" \
+"Content and Access Palm, Inc\n\n" \
+"<aj>Palm's chief operating officer for Wireless Internet Solutions, " \
+"Barry Cottle, is responsible for driving the strategic direction of " \
+"Internet content and services for the Palm\231 family of handheld " \
+"computers. He oversees the Palm.net® wireless Internet service, " \
+"Palm.com and all of Palm's Internet solutions. Barry brings to " \
+"Palm a wealth of experience in creating new and exciting interactive " \
+"content and programming for mass consumer market audiences. \n\n" \
+"Barry joined Palm after nine years at The Walt Disney Company, " \
+"where he served most recently as senior vice president of Marketing " \
+"of Disney TeleVentures, the division of Disney dedicated to " \
+"broadband TV and Internet applications and services. At Disney, " \
+"he was responsible for creating and launching new TV/Internet " \
+"products and services. In addition, Barry was responsible for " \
+"creating new strategic partnerships and extending brand and public " \
+"acceptance of a $500 million video programming joint venture " \
+"between Disney, Ameritech, BellSouth, GTE and others. Previously, " \
+"he served as vice president at Disney, managing regional business " \
+"development, marketing and sales teams. Barry has also done " \
+"marketing and consulting for Apple Computer and Anderson Consulting.\n\n" \
+"Barry has an MBA degree from the Kellogg Graduate School of Management.</a>"
+
+BITMAPFAMILY ID 6008 
+  "" "images/people/maggs.bmp" "images/people/maggs.bmp" COMPRESS
+
+HEX "hSTR" ID 6008
+"<tWilliam Maggs>" \
+"<il6008></i><u>Chief Technology Officer</u>\n" \
+"Palm, Inc\n\n" \
+"<aj>Chief Technology Officer, William Maggs came to Palm, Inc. " \
+"to help transform the company from an information management device " \
+"company into a diverse technology enterprise delivering solutions " \
+"of software, hardware and services. He is directing the integration " \
+"of enabling technologies that will leverage the role of Palm OS® " \
+"software-enabled handhelds as crucial building blocks of the mobile " \
+"Internet. Unlike the massive information environment of the Web, the " \
+"Palm\231-enabled mobile Internet will be based on highly personalized " \
+"and streamlined time- and locality-based services arising directly " \
+"out of the Palm customer experience. \n\n" \
+"Bill came to Palm from Inktomi, where he served as chief network " \
+"officer. In that role, he determined the technology direction for " \
+"the company's network products business through design of content " \
+"delivery systems and other pieces of Internet infrastructure. " \
+"Before that, he worked at MCI as a senior architect for Vint Cerf, " \
+"colloquially known as 'the father of the Internet.' There, he was " \
+"closely involved in designing and building large IP networks and " \
+"advanced development of the services that comprise important components " \
+"of Internet architecture. He holds several positions on standards and " \
+"review bodies, including a working group chairmanship of the Internet " \
+"Engineering Task Force. \n\n" \
+"Bill holds degrees from Amherst College and Johns Hopkins University.</a>"
+
+BITMAPFAMILY ID 6009 
+  "" "images/people/burke.bmp" "images/people/burke.bmp" COMPRESS
+
+HEX "hSTR" ID 6009
+"<tJames Burke>" \
+"<il6009></i>\n" \
+"<aj>Award-winning television host, author, and educator James Burke " \
+"holds an MA from Oxford and several honorary doctorates for his work. \n\n" \
+"Burke is best known in the U.S. for his wildly successful BBC television " \
+"series, Connections. First aired in the U.S. on PBS, Connections explored " \
+"the evolution of technology and achieved the highest-ever audience for a " \
+"documentary series in the United States. Burke also produced a CD-ROM game " \
+"version of the series (Connections: A Mind Game).\n\n" \
+"After twenty years with BBC-TV, Burke went on to produce and host a " \
+"number of series for PBS and Discovery including: The Neuron Suite, The " \
+"Day the Universe Changed, After the Warming, Masters of Illusion, " \
+"Connections 2 and Connections 3.\n\n" \
+"Burke is also a best-selling author of eight books. His latest, " \
+"published in December 2000 is titled Circles. He is at present working " \
+"on a large interactive knowledge web due to go online in 2002. He is " \
+"a regular contributor to Forbes ASAP and writes a monthly column for " \
+"Scientific American.</a>"
+
+/*
+ * INDIVIDUAL SESSIONS
+ */
+
+HEX "hSTR" ID 10
+"<t10K>" \
+"<ac><u>Palm Economy Vision</u></a>\n" \
+"<l6000>Carl Yankowski</l>\n" \
+"<aj>Palm CEO Carl Yankowski will open PalmSource\231 2000 " \
+"with an overview of the strategic vision for the industry's " \
+"leading platform. Carl's talk will focus on what Palm is " \
+"doing to extend its leadership in handheld computing and " \
+"how the Palm OS® platform is evolving to embrace new " \
+"technologies and standards. Carl will also highlight " \
+"emerging trends in consumer and business usage of wireless " \
+"devices and discuss the innovative business models Palm has " \
+"developed to stimulate the Palm Economy in response to " \
+"these trends.</a>" 
+
+HEX "hSTR" ID 15
+"<t15K>" \
+"<ac><u>Palm Economy Direction && Opportunity</u></a>\n" \
+"<l6001>Gabriel Acosta-Lopez</l>\n" \
+"<l6002>Satjiv Chahil</l>\n" \
+"<aj>Following Carl's keynote, we will continue to sharpen this " \
+"vision in a dynamic session offering views of the Palm Economy " \
+"from many angles. We'll provide valuable insights into the technology " \
+"roadmap, as well as Palm's new marketing directions. We'll show some " \
+"of the most innovative solutions using the Palm platform, introduce " \
+"key market players, and present a glimpse of what's coming down the " \
+"pike—all with an eye toward how you can best position yourself to take " \
+"advantage of emerging opportunities.</a>" 
+
+HEX "hSTR" ID 20
+"<t20K>" \
+"<ac><u>Next-Generation Handheld Solutions: Beyond Pilots and Organizers</u></a>\n" \
+"<l6003>Robert McGinn</l>\n" \
+"<aj>Are you caught in the trap of the 'dominant paradigm'? As a result " \
+"of his study of technology in contemporary society, Robert McGinn has " \
+"arrived at some revealing insights into the ways we inhibit innovation. " \
+"In this presentation, he will look at handheld devices of today, unearth " \
+"some underlying assumptions about them, and argue that the ability to " \
+"step outside those assumptions may be a key to envisioning radical new " \
+"uses for handhelds in the future.</a>"
+
+HEX "hSTR" ID 25
+"<t25K>" \
+"<ac><u>Exploring Next-Generation Solutions: The Panel</u></a>\n" \
+"<aj>Following his presentation, Robert will be joined by Bill Maggs " \
+"and Joe Sipher to share their viewpoints on the handheld industry " \
+"today, talk about the difference between invention and innovation—and " \
+"offer some advice about areas developers should focus on to prepare for " \
+"the next wave of handheld computing.</a>"
+
+HEX "hSTR" ID 30
+"<t30K>" \
+"<ac><u>The Impact of Palm within the Enterprise</u></a>\n" \
+"<l6004>Alan Kessler</l>\n" \
+"<aj>The use of handheld devices within the Enterprise is an area of " \
+"vital interest to the entire developer community. Considered by many " \
+"the crown jewel of markets, it is one of great potential and promise—with " \
+"more than a few hurdles. Representatives from three enterprise customers " \
+"will talk about their approach to integrating Palm Powered\231 devices into " \
+"their organizations. Among the issues up for discussion are: How are " \
+"enterprises using handhelds today? How has mobile computing changed their " \
+"way of doing business? What have been their biggest successes and their " \
+"biggest challenges? What are their needs moving forward?</a>"
+
+HEX "hSTR" ID 40
+"<t40K>" \
+"<ac><u>Innovation in the Age of Creative Destruction</u></a>\n" \
+"<l6005>Paul Saffo</l>\n" \
+"<aj>'I know I asked for ice, but this is ridiculous!'—John Jacob " \
+"Astor's immortal quip (rumored to have been uttered while sitting in " \
+"the bar of the Titanic) neatly captures the mood of many players " \
+"overwhelmed by the magnitude of the digital wave engulfing business " \
+"innovators today. And it is not just the has-runs, but the players at " \
+"the very leading edge of the revolution who justifiably feel least " \
+"secure. Welcome to a brave new world of creative destruction, where " \
+"success lies in turning the old rules upside down: ignore consultants, " \
+"burn management books, embrace uncertainty, keep your own counsel. " \
+"Look at the chaos carefully and with a larger perspective—and a " \
+"galaxy of new handheld opportunities may be visible.</a>"
+
+HEX "hSTR" ID 45
+"<t45K>" \
+"<ac><u>Positioning the Palm OS®</u></a>\n" \
+"<l6006>Michael Mace</l>\n" \
+"<aj>Michael will provide a provocative look at the handheld landscape " \
+"today and tomorrow. How is handheld computing evolving? How big will " \
+"the market become? How is the competitive landscape shaping up? Who " \
+"are the other players? What are they planning? What about other form " \
+"factors? If questions like these are keeping you up at night, this " \
+"session is for you</a>"
+
+HEX "hSTR" ID 50
+"<t50K>" \
+"<ac><u>The Palm Platform: The Powers of Wireless</u></a>\n" \
+"<l6007>Barry Cottle</l>\n" \
+"<aj>In this session, we will explore the destination: Palm's vision " \
+"for the wireless world, and the services and products that will " \
+"connect users anywhere, anytime. Barry Cottle, Palm's COO, Content " \
+"&& Access, will talk about the user experience, and will describe " \
+"the alternative business models behind these products and services.</a>"
+
+HEX "hSTR" ID 55
+"<t55K>" \
+"<ac><u>The Palm Platform: The Technology Roadmap</u></a>\n" \
+"<l6008>Bill Maggs</l>\n" \
+"<aj>Bill Maggs, Palm's Chief Technology Officer, will provide the " \
+"map to the wireless world by describing the key underlying " \
+"technologies that will make this vision a reality. Bill will " \
+"discuss where Palm OS® technology is heading, and how developers " \
+"can capitalize on industry trends. Get the facts and discover " \
+"new opportunities within the wireless space, based on Palm OS " \
+"priorities for hardware, software, and telephonic infrastructure.</a>"
+
+HEX "hSTR" ID 70
+"<t70K>" \
+"<ac><u>Discovering America: The Interplay of Technology and Social Change</u></a>\n" \
+"<l6009>James Burke</l>\n" \
+"<aj>World-renowned creator of a record-breaking TV documentary " \
+"series and best-selling author, James Burke is a speaker who " \
+"manages to inform and entertain.\n\n" \
+"Where others see chaos, Burke sees connections. And where a " \
+"pattern can be discerned, forecasting becomes more than a coin " \
+"toss. His award-winning TV series—Connections—took a series of " \
+"seemingly unrelated events, people, and situations and fit them " \
+"into a puzzle that helped explain the true forces behind social " \
+"and technological change.\n\n" \
+"As we will discuss throughout the conference, we believe the full " \
+"power of the handheld has yet to be tapped. To realize its true " \
+"potential, you need to take a great leap in thinking, to imagine " \
+"the future—and then design the path to get to it. 'What happens,' " \
+"says Burke, 'if we begin to think of intelligence in terms of " \
+"imagination rather than memory?'\n\n" \
+"This session is guaranteed to change the way you look at innovation " \
+"and get your creative juices flowing!</a>"
+
+HEX "hSTR" ID 100
+"<t100>" \
+"<ac><u>Zen of Palm</u></a>\n" \
+"Thursday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>In today's market, the path to excellent user interface and " \
+"product design enlightenment can be confused by transient technologies " \
+"and their eager advocates. Discover how to apply to your own projects " \
+"the philosophies that underlie the Palm OS® platform and user " \
+"interface. Learn why you should embrace simplicity. Focus on what " \
+"really matters. Seek the tranquility of the customer. And never run " \
+"with sharp sticks.</a>"
+
+HEX "hSTR" ID 101
+"<t101>" \
+"<ac><u>OS && Device Cross Compatibility</u></a>\n" \
+"Friday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>The Palm Economy boasts a growing variety of Palm Powered\231 " \
+"devices, each with unique hardware and characteristics. The number of " \
+"software products that need to coexist peacefully on these devices " \
+"is skyrocketing. And, of course, the Palm OS® itself continues " \
+"to evolve. So come learn how to write code defensively, optimizing " \
+"your application for today's diverse requirements. And ensure the " \
+"stability of your application as new devices - and new versions of " \
+"the Palm OS - make their debut.</a>"
+
+HEX "hSTR" ID 102
+"<t102>" \
+"<ac><u>Developing Hardware Add-ons and Drivers</u></a>\n" \
+"Friday<x60>13:00 - 14:00</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Get the latest information on the tools you need to develop " \
+"hardware add-ons for Palm Powered\231 devices. Learn about Handspring's " \
+"Springboard\231 module, Palm's new expansion strategy surrounding SD " \
+"(Secure Digital), Sony's Memory Stick\231, and TRG's CompactFlash " \
+"slot. Discover the differences between each expansion strategy. And " \
+"find out what licensees offer you in terms of Hardware Development " \
+"Kits and other important tools. (Be sure to join the related " \
+"roundtable discussion, <l114>114RT</l>.)</a>"
+
+HEX "hSTR" ID 103
+"<t103>" \
+"<ac><u>Adding Communications to Your Application</u></a>\n" \
+"Friday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Come learn how to add communications to your Palm OS® applications. " \
+"Discover how to use Serial Manager, Exchange Manager, and TCP via modem or " \
+"wirelessly using Palm OS Netlib and/or Berkeley Sockets. Gain insights into " \
+"the pros and cons of new vs. old Serial Manager. Get the facts about User " \
+"Interface for multiple virtual/serial port selection, virtual ports/serial " \
+"drivers, and IRComm. And learn how to support multiple versions of the " \
+"Palm OS platform and APIs using C++ classes as abstraction tools.</a>"
+
+HEX "hSTR" ID 105
+"<t105>" \
+"<ac><u>Writing Visual Basic Conduits for Windows®</u></a>\n" \
+"Wednesday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Get an introduction to developing conduits in Visual Basic using " \
+"Palm Inc.’s Component CDK (a valuable session for C++ and Java programmers).</a>"
+
+HEX "hSTR" ID 106
+"<t106>" \
+"<ac><u>HotSync\231 Server Development</u></a>\n" \
+"Wednesday<x60>15:45 - 16:45</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>If you are a business or government developer—or IT manager—attend " \
+"this presentation on server-based synchronization solutions for accessing " \
+"enterprise email and databases. Discover how a server synchronization " \
+"solution can streamline workplace operations and boost employee " \
+"productivity. Learn the business benefits and applications of server " \
+"synchronization, as well as considerations for administering and managing " \
+"handhelds. Also, gain insights into the HotSync Server architecture " \
+"and development tools.</a>"
+
+HEX "hSTR" ID 107
+"<t107>" \
+"<ac><u>Developing Full-Motion Animation</u></a>\n" \
+"Friday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>This session is ideal for designers and programmers who want to " \
+"develop Palm OS® solutions that use animation—such as games and " \
+"picture viewers. See the authors of Zap!2000 demonstrate the tools " \
+"and methods for getting smooth full-screen animation for both " \
+"entertainment and business applications. Get demos of buffering, " \
+"and vector and bitmap drawing. Learn the pros and cons of bypassing " \
+"the Palm OS drawing routines. You'll also get sample code to help " \
+"you put your new knowledge to work.</a>"
+
+HEX "hSTR" ID 108
+"<t108>" \
+"<ac><u>Writing the Non-Simple Application</u></a>\n" \
+"Thursday<x60>12:30 - 13:30</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>If you already know how to use CodeWarrior® or PRC Tools to " \
+"create a simple Palm OS® application, come learn how to use " \
+"your tool chains to create more complex solutions. Discover how " \
+"to use segmenting to create applications with more than 64K of " \
+"code. Learn how to use static libraries and shared libraries " \
+"to share code among multiple applications. And find out how to " \
+"design a plug-in architecture to allow runtime customization " \
+"of your application.</a>"
+
+HEX "hSTR" ID 109
+"<t109L>" \
+"<ac><u>Debugging Communications</u></a>\n" \
+"Friday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Attend this lab to learn debugging techniques for " \
+"communications code. Discover the best ways to proceed, since " \
+"debugging on Palm Powered\231 devices requires the serial " \
+"port—which is generally in use when running communications code. " \
+"Get the facts about using POSE, as well as on-device tricks and " \
+"techniques. And walk through the debugging of a sample application. </a>"
+
+HEX "hSTR" ID 110
+"<t110L>" \
+"<ac><u>Creating Visual Basic Conduits for Windows®</u></a>\n" \
+"Wednesday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>If you're new to developing conduits in Visual Basic, don't miss " \
+"this highly useful lab. Walk step-by-step through the development " \
+"of a simple conduit using Visual Basic and Palm's component conduit " \
+"development kit (CDK). And get an overview of a Visual Basic conduit " \
+"using Generic Conduit objects.</a>"
+
+HEX "hSTR" ID 111
+"<t111L>" \
+"<ac><u>Creating C/C++ Conduits for Windows®</u></a>\n" \
+"Thursday<x60>15:00 - 16:00</f>\n" \
+"Room:<x60>Small Lab\n\n" \
+"<aj>Attend this lab if you're new to developing HotSync\231 conduits " \
+"for Windows. Get a step-by-step walkthrough of developing a simple " \
+"conduit, using the Generic Conduit classes in Visual C++. You'll also " \
+"get an overview of Conduit Inspector, to assist you in debugging " \
+"common conduit problems.</a>"
+
+HEX "hSTR" ID 112
+"<t112L>" \
+"<ac><u>Creating C/C++ Conduits for Macintosh\231</u></a>\n" \
+"Tuesday<x60>13:30 - 14:30</f>\n" \
+"Room:<x60>Small Lab\n\n" \
+"<aj>New to developing HotSync\231 conduits for Macintosh? Be sure " \
+"to attend this lab. You'll get a step-by-step demonstration of developing " \
+"a simple conduit, using the Generic Conduit classes in Metrowerks " \
+"CodeWarrior® for Macintosh.</a>"
+
+HEX "hSTR" ID 113
+"<t113L>" \
+"<ac><u>Hot Sync\231 Server Development</u></a>\n" \
+"Thursday<x60>17:30 - 18:30</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Come to this lab to learn how to develop server-based " \
+"synchronization solutions for accessing enterprise applications " \
+"and databases using the HotSync Server. Get an overview of the " \
+"HotSync Server conduit architecture and development API. See how " \
+"simple it is to set up a HotSync Server conduit and develop " \
+"using the HotSync Server API. And walk through a conduit development " \
+"cycle, from set up of the development environment through executing " \
+"the conduit with a Palm Powered\231 device.</a>"
+
+HEX "hSTR" ID 114
+"<t114RT>" \
+"<ac><u>Expansion Technologies on Palm OS® Devices</u></a>\n" \
+"Friday<x60>14:15 - 15:15</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Meet with the representatives from Palm OS® licensees you " \
+"heard in Session <l102>102</l> (Developing Hardware Add-ons and " \
+"Drivers). Get answers to your questions about developing expansion " \
+"products for their Palm Powered™ devices. Exchange ideas and " \
+"strategies about different expansion methodologies directly " \
+"with these company representatives—as well as with your fellow " \
+"developers. </a>"
+
+HEX "hSTR" ID 200
+"<t200>" \
+"<ac><u>New Palm OS® Technologies</u></a>\n" \
+"Friday<x60>11:00 - 12:00</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Hear the announcements and see the big picture on upcoming " \
+"Palm OS features. Learn which of the four New Technologies Detail " \
+"sessions to attend to hear more on each subtopic. And find out how " \
+"to be seeded with the next version of the Palm OS, so you can start " \
+"using it to test and develop your applications. (Session content is " \
+"technical and assumes knowledge of existing Palm OS versions.)</a>"
+
+HEX "hSTR" ID 201
+"<t201>" \
+"<ac><u>New Technologies Detail Session 1</u></a>\n" \
+"Tuesday<x60>14:45 - 15:45</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>We can't yet say what this session will cover, except that " \
+"it's crammed with details on the APIs you'll see appearing in " \
+"future OS releases and/or devices. This is where we'll raise the " \
+"curtain on all the new information.</a>"
+
+HEX "hSTR" ID 202
+"<t202>" \
+"<ac><u>New Technologies Detail Session 2</u></a>\n" \
+"Tuesday<x60>16:00 - 17:00</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>We can't yet say what this session will cover, except that " \
+"it's crammed with details on the APIs you'll see appearing in " \
+"future OS releases and/or devices. This is where we'll raise the " \
+"curtain on all the new information.</a>"
+
+HEX "hSTR" ID 203
+"<t203>" \
+"<ac><u>New Technologies Detail Session 3</u></a>\n" \
+"Wednesday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>We can't yet say what this session will cover, except that " \
+"it's crammed with details on the APIs you'll see appearing in " \
+"future OS releases and/or devices. This is where we'll raise the " \
+"curtain on all the new information.</a>"
+
+HEX "hSTR" ID 204
+"<t204>" \
+"<ac><u>New Features of Web Clipping</u></a>\n" \
+"Wednesday<x60>15:45 - 16:45</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Interested in accessing the Internet from a Palm Powered\231 "\
+"handheld? Attend this session to hear about the latest feature " \
+"enhancements to web clipping—including UI, development, and system " \
+"features. Learn about new tags, attributes, special strings, and " \
+"capabilities for accessing and managing Internet data. And discover " \
+"new possibilities for web clipping developers.</a>"
+
+HEX "hSTR" ID 205
+"<t205>" \
+"<ac><u>Bluetooth and Palm OS®</u></a>\n" \
+"Wednesday<x60>12:30 - 13:30</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Discover how Palm Economy developers can capitalize on the " \
+"Bluetooth revolution. Get an overview of Bluetooth's exciting " \
+"capabilities. Hear the details about Palm's Bluetooth " \
+"implementation and roadmap, so you can better plan your own " \
+"applications. (You're also encouraged to attend one of the " \
+"Bluetooth hands-on labs, <l207>207L</l> and <l208>208L</l>.)</a>"
+
+HEX "hSTR" ID 206
+"<t206>" \
+"<ac><u>The Next-Generation Palm OS®</u></a>\n" \
+"Thursday<x60>17:30 - 18:30</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>We're not content with telling you about just one major " \
+"upcoming Palm OS platform release; we want you to know about " \
+"the next one, too. Get an extremely early look at that release, " \
+"covering planned improvements in the architecture, tools, and " \
+"hardware capabilities. Learn the crucial information you need to " \
+"ensure compatibility far into the future.</a>"
+
+HEX "hSTR" ID 207
+"<t207L>" \
+"<ac><u>Hands-on Bluetooth Lab 1</u></a>\n" \
+"Wednesday<x60>15:45 - 16:45</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Get the knowledge you need to begin working on your own " \
+"Bluetooth-based applications. See demonstrations of sample " \
+"Bluetooth apps and walk through the key points of the source " \
+"code. Learn important concepts behind Palm's Bluetooth " \
+"implementation. To get the most out of this lab, you should " \
+"have Palm OS® development experience and some knowledge of " \
+"communications software. The background information gained by " \
+"attending Session <l205>205</l> (Bluetooth and the Palm OS) " \
+"will prove helpful, too.</a>"
+
+HEX "hSTR" ID 208
+"<t208L>" \
+"<ac><u>Hands-on Bluetooth Lab 2</u></a>\n" \
+"Friday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Get the knowledge you need to begin working on your own " \
+"Bluetooth-based applications. See demonstrations of sample " \
+"Bluetooth apps and walk through the key points of the source " \
+"code. Learn important concepts behind Palm's Bluetooth " \
+"implementation. To get the most out of this lab, you should " \
+"have Palm OS® development experience and some knowledge of " \
+"communications software. The background information gained by " \
+"attending Session <l205>205</l> (Bluetooth and the Palm OS) " \
+"will prove helpful, too.</a>"
+
+HEX "hSTR" ID 209
+"<t209RT>" \
+"<ac><u>Palm OS® Technologies Q&&A</u></a>\n" \
+"Thursday<x60>15:00 - 16:00</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Connect with the exciting minds behind the innovations " \
+"discussed in the New Palm OS Technologies sessions. Discuss " \
+"the new core OS improvements. Get answers to questions that " \
+"concern you most. And meet potential technology partners.</a>"
+
+HEX "hSTR" ID 210
+"<t210RT>" \
+"<ac><u>Palm OS® Technologies Q&&A</u></a>\n" \
+"Thursday<x60>16:15 - 17:15</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Connect with the exciting minds behind the innovations " \
+"discussed in the New Palm OS Technologies sessions. Discuss " \
+"the new core OS improvements. Get answers to questions that " \
+"concern you most. And meet potential technology partners.</a>"
+
+HEX "hSTR" ID 211
+"<t211>" \
+"<ac><u>New Technologies Detail Session 4</u></a>\n" \
+"Wednesday<x60>17:00 - 18:00</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>We can't yet say what this session will cover, except that " \
+"it's crammed with details on the APIs you'll see appearing in " \
+"future OS releases and/or devices. This is where we'll raise the " \
+"curtain on all the new information.</a>"
+
+HEX "hSTR" ID 301
+"<t301>" \
+"<ac><u>Options for Wireless Development</u></a>\n" \
+"Thursday<x60>15:00 - 16:00</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>There are various methods to push web content to handheld " \
+"devices: HTML, WAP, web clipping, and pure data. Attend this " \
+"session to find out which ones are superior in delivering a " \
+"consistently powerful user experience. Get an objective framework " \
+"for evaluating these methods by focusing on user needs for " \
+"obtaining mission-critical corporate and personal data.</a>"
+
+HEX "hSTR" ID 302
+"<t302>" \
+"<ac><u>Enabling Technologies for Delivering Wireless Data</u></a>\n" \
+"Thursday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Here's a valuable session for IT managers, developers, and VARs " \
+"who want to implement a wireless Palm OS® solution for a large " \
+"organization. Come explore the complex landscape of wireless data and " \
+"associated software technologies that enable mobile computing solutions. " \
+"Get an overview of CDPD, Mobitex, GPRS, and other wireless data " \
+"protocols. Discover your options for connecting enterprise LANs to " \
+"wireless WANs. And find the facts you need about solution strategies, " \
+"development tools, and hosting.</a>"
+
+HEX "hSTR" ID 304
+"<t304>" \
+"<ac><u>Partnering with Palm.net®</u></a>\n" \
+"Thursday<x60>16:15 - 17:15</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>The future is promising for Palm's wireless content services " \
+"business. You can benefit, too, whether you're a content or application " \
+"developer, marketer, or business development professional. Hear Palm's " \
+"vision for aggregating and distributing wireless content. Learn how our " \
+"services will grow, and what business models are being developed. And get " \
+"ideas on evolving your own services to participate in Palm's overall " \
+"content offering.</a>"
+
+HEX "hSTR" ID 305
+"<t305>" \
+"<ac><u>Creating Web Clipping Applications</u></a>\n" \
+"Thursday<x60>16:15 - 17:15</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Get a quick start into the exciting and rapidly growing world " \
+"of web clipping applications (WCAs). Learn how to create WCAs using a " \
+"simple text editor, the Web Clipping Application Builder, and basic " \
+"HTML knowledge. Hear about WCA-specific HTML tags and user interface " \
+"guidelines for WCAs. And discover how to create and format web " \
+"clippings to be sent by their server back to Palm Powered™ devices. " \
+"(This session is designed for all PalmSource\231 attendees, and " \
+"requires only minimal knowledge of HTML.)</a>"
+
+HEX "hSTR" ID 307
+"<t307>" \
+"<ac><u>Adding Wireless Capability to a PRC</u></a>\n" \
+"Thursday<x60>13:45 - 14:45</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>The INetLib API can enable your application to enter a new " \
+"wireless world. Attend this session to find out about sending " \
+"HTTP and HTTPS queries, calling back-end server processes, and " \
+"retrieving data without involving the web clipping application. " \
+"Learn how to call the web clipping application to access the " \
+"Internet for you. Session content assumes familiarity with " \
+"creating PRCs and writing C code. (Be sure to attend the hands-on " \
+"lab <l308>308L</l>, Programming with the INetLib APIs.)</a>"
+
+HEX "hSTR" ID 308
+"<t308L>" \
+"<ac><u>Programming with the INetLib API</u></a>\n" \
+"Friday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Small Lab\n\n" \
+"<aj>Attend this lab for a more detailed code-level review of " \
+"topics discussed in Session <l307>307</l> (Adding Wireless " \
+"Capability to a PRC). See actual code utilizing the INetLib " \
+"API. Learn the basics of coding INetLib into your Palm OS® "\
+"application. And get a walkthrough of a simple application " \
+"that retrieves data from the Internet and takes advantage of " \
+"the new INetLib features.</a>"
+
+HEX "hSTR" ID 400
+"<t400>" \
+"<ac><u>Platform Horizontal Tools</u></a>\n" \
+"Thursday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Discover the most useful tools for developing consumer or " \
+"horizontal solutions for Palm Powered\231 devices. And learn " \
+"about tools supporting different programming languages, conduit " \
+"development, and web clipping. If you're focused on the enterprise, " \
+"attend Session <l401>401</l>, Tools for Enterprise Development.</a>"
+
+HEX "hSTR" ID 401
+"<t401>" \
+"<ac><u>Tools for Enterprise Development</u></a>\n" \
+"Wednesday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>The enterprise is a rapidly growing market for Palm OS® " \
+"solutions. Attend this session for the latest on rapid application " \
+"development (RAD) tools that are easily scalable to the enterprise " \
+"market. And get the facts about prepackaged synchronization " \
+"solutions for the enterprise database. </a>"
+
+HEX "hSTR" ID 402
+"<t402>" \
+"<ac><u>Java®\231 Tools for the Palm OS®</u></a>\n" \
+"Wednesday<x60>12:30 - 13:30</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Get a close look at Java implementations for Palm Powered\231 " \
+"devices. Discover how the Palm OS platform fits into the overall " \
+"Java 2, Micro Edition landscape. Learn about the Personal Digital " \
+"Assistant (PDA) Profile initiative that Palm is leading within the " \
+"Java community. And walk through the development of a Java " \
+"application under Palm OS, including the user interface, data " \
+"storage, and network access.</a>"
+
+HEX "hSTR" ID 403
+"<t403>" \
+"<ac><u>Inside CodeWarrior®</u></a>\n" \
+"Thursday<x60>13:45 - 14:45</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>The CodeWarrior for the Palm OS® tool set is a powerful " \
+"environment for creating, building, and debugging applications " \
+"for Palm Powered\231 devices. If you've been working with " \
+"CodeWarrior for less than a year, be sure to attend this session. " \
+"Learn tricks from the masters on getting the most from the editor, " \
+"debugger, PalmRez post-linker, and other IDE plug-ins. And find " \
+"out how to configure the CodeWarrior Palm-specific target " \
+"settings to create efficient applications.</a>"
+
+HEX "hSTR" ID 404
+"<t404>" \
+"<ac><u>The GCC Toolchain</u></a>\n" \
+"Thursday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>Discover your options for developing Palm OS® software " \
+"applications on UNIX\231 or Windows®, using the GNU Compiler " \
+"Collection (GCC) and associated tools. Learn how to build more " \
+"advanced projects, such as shared libraries and HackMaster hacks. " \
+"And find out about the recent releases of these tools, as well as " \
+"plans for the future.</a>"
+
+HEX "hSTR" ID 408
+"<t408>" \
+"<ac><u>Future Tools Roadmap</u></a>\n" \
+"Friday<x60>14:15 - 15:15</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>All Palm Economy developers can benefit from this session. " \
+"Come see into the future of handheld development. Hear Palm's " \
+"development tool leaders discuss new tools coming in both the " \
+"near and long term. And help our developers tailor our products " \
+"to meet your needs.</a>"
+
+HEX "hSTR" ID 409
+"<t409>" \
+"<ac><u>Palm OS® Emulator</u></a>\n" \
+"Friday<x60>13:00 - 14:00</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>This session has something for every Palm Economy developer, " \
+"from beginner to advanced. Learn the ins and outs of the Palm OS " \
+"Emulator from the people who wrote it. Get the details of features " \
+"added over the last year, and a preview of upcoming developments. " \
+"And find out how to use the Emulator to enhance your application " \
+"development.</a>"
+
+HEX "hSTR" ID 410
+"<t410L>" \
+"<ac><u>Using the New Tools</u></a>\n" \
+"Friday<x60>18:45 - 01:00</f>\n" \
+"Room:<x60>Small Lab\n\n" \
+"<aj>Tool designers and vendors will demonstrate their products " \
+"at this open lab. Here's your chance to evaluate the various tools " \
+"for Palm OS® development. Ask questions of each tool's designer. " \
+"And offer feedback about what you would like to see in the future.</a>"
+
+HEX "hSTR" ID 411
+"<t411L>" \
+"<ac><u>Introduction to CodeWarrior® 1</u></a>\n" \
+"Tuesday<x60>14:45 - 15:45</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Here's your opportunity to get a hands-on guided tour of the " \
+"CodeWarrior Palm-specific features by creating a simple application " \
+"from scratch. And learn about IDE basics (editor, project window, " \
+"debugger), Constructor, and the MW debugger. Technology Primer " \
+"participants who arrive at the lab five minutes before the " \
+"scheduled starting time will be given priority admission (you must " \
+"bring your Technology Primer badge).</a>"
+
+HEX "hSTR" ID 412
+"<t412L>" \
+"<ac><u>Introduction to CodeWarrior® 2</u></a>\n" \
+"Wednesday<x60>12:30 - 13:30</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Here's your opportunity to get a hands-on guided tour of the " \
+"CodeWarrior Palm-specific features by creating a simple application " \
+"from scratch. And learn about IDE basics (editor, project window, " \
+"debugger), Constructor, and the MW debugger. Technology Primer " \
+"participants who arrive at the lab five minutes before the " \
+"scheduled starting time will be given priority admission (you must " \
+"bring your Technology Primer badge).</a>"
+
+HEX "hSTR" ID 413
+"<t413L>" \
+"<ac><u>Rapid Application Tools</u></a>\n" \
+"Thursday<x60>13:45 - 14:45</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>If you're new to the Palm OS® platform, don't miss this " \
+"introduction to available rapid application development (RAD) tools. " \
+"Gain familiarity with current RAD tools, and learn which tools " \
+"best meet your needs. Get some hands-on experience. And discover " \
+"how to build an application that synchronizes with an enterprise " \
+"database.</a>"
+
+HEX "hSTR" ID 414
+"<t414RT>" \
+"<ac><u>Tools for the Enterprise</u></a>\n" \
+"Wednesday<x60>15:45 - 16:45</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Come join toolmakers, developers, and market experts as they " \
+"discuss tool-related enterprise development issues. This is your " \
+"opportunity to find out how other developers are creating solutions " \
+"for the enterprise market. And also offer direct feedback to " \
+"toolmakers on what you need to be more productive in the future.</a>"
+
+HEX "hSTR" ID 415
+"<t415RT>" \
+"<ac><u>Palm OS® SDKs</u></a>\n" \
+"Wednesday<x60>15:45 - 16:45</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Here's your chance to interact with key members of the team " \
+"that creates the Palm OS Software Development Kit and its associated " \
+"tools. Bring your questions and comments.</a>"
+
+HEX "hSTR" ID 500
+"<t500>" \
+"<ac><u>You Can't Optimize Too Soon</u></a>\n" \
+"Thursday<x60>12:30 - 13:30</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>This session is designed for all Palm Economy developers, whether " \
+"you're about to start—or have already finished—a Palm OS® solution. " \
+"Discover exactly what is 'optimal' in relation to the Palm OS. Hear " \
+"real-world examples concerning Palm's own applications and operating " \
+"system. And gain pivotal insights into design, user interface, " \
+"management, scheduling, and support issues.</a>"
+
+HEX "hSTR" ID 501
+"<t501>" \
+"<ac><u>Palm Debugger: Taking Control</u></a>\n" \
+"Friday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Discover effective debugging techniques to help pinpoint problems " \
+"fast. Learn special methods and abilities once known only to Palm " \
+"engineers. Find out secret tricks for PalmDebugger. See ways to detect " \
+"or prevent stack overflow, as well as track your code's progress, in " \
+"'un-debuggable' situations. And watch how experts would debug the " \
+"trickiest problems.</a>"
+
+HEX "hSTR" ID 502
+"<t502>" \
+"<ac><u>Optimizing the User Interface</u></a>\n" \
+"Thursday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Come learn the various elements of a well-designed Palm OS® " \
+"application. Discover Palm's application strengths in focusing the " \
+"UI for small screens. Find out how to make a great first impression " \
+"with customers. And learn how to make your application look great " \
+"in color.</a>"
+
+HEX "hSTR" ID 503
+"<t503>" \
+"<ac><u>Optimizing Use of the Serial Manager</u></a>\n" \
+"Friday<x60>14:15 - 15:15</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>Find out how to optimize applications that depend on the Serial " \
+"Manager. Discover how to define your optimization goals and process. " \
+"Learn more about optimization goals when using serial " \
+"communications—and how best to achieve them using Serial Manager tools.</a>"
+
+HEX "hSTR" ID 505
+"<t505L>" \
+"<ac><u>Optimizing Existing Applications</u></a>\n" \
+"Thursday<x60>15:00 - 16:00</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Gain insights into profiling and optimizing functionally complete " \
+"applications. Learn how best to determine optimization priorities, the " \
+"basics of profiling with Palm OS® Emulator, and techniques for " \
+"identifying and analyzing critical code sections. Then use these methods " \
+"to improve your existing products or fine-tune new releases.</a>"
+
+HEX "hSTR" ID 506
+"<t506L>" \
+"<ac><u>Optimizing for Compatibility Testing</u></a>\n" \
+"Tuesday<x60>16:00 - 17:00</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Palm's compatibility test improves assurance of reliability " \
+"for corporate and private users—and the compatibility logo helps " \
+"further differentiate your application. Come learn about the testing " \
+"procedure. Find out which issues commonly lead to failure or delay " \
+"the process. And discover coding and procedural solutions that can " \
+"help your application earn approval.</a>"
+
+HEX "hSTR" ID 601
+"<t601>" \
+"<ac><u>Palm - The Next-Generation of Palm Expansion Technologies: " \
+"Get PluggedIn@Palm</u></a>\n" \
+"Tuesday<x60>13:30 - 14:00</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 602
+"<t602>" \
+"<ac><u>Symbol Technologies</u></a>\n" \
+"Tuesday<x60>14:45 - 15:45</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 603
+"<t603>" \
+"<ac><u>Handspring: Springboard Module Development</u></a>\n" \
+"Tuesday<x60>15:45 - 16:45</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 604
+"<t604>" \
+"<ac><u>SONY Electronics, Inc</u></a>\n" \
+"Tuesday<x60>17:00 - 18:00</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 605
+"<t605>" \
+"<ac><u>IBM - Mobile e-Business Architecture</u></a>\n" \
+"Tuesday<x60>13:45 - 14:45</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 606
+"<t606>" \
+"<ac><u>Sun Microsystems</u></a>\n" \
+"Tuesday<x60>17:30 - 18:30</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 607
+"<t607>" \
+"<ac><u>Computer Associates: Managing Palm Powerer\231 Devices " \
+"&& Software in the Enterprise Environment</u></a>\n" \
+"Tuesday<x60>14:45 - 15:45</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 608
+"<t608>" \
+"<ac><u>Sybase - Building Mobile && Wireless Solutions for Palm " \
+"Powered\231 Devices</u></a>\n" \
+"Tuesday<x60>16:00 - 17:00</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 609
+"<t609>" \
+"<ac><u>Siebel Systems: Mobile eBusiness</u></a>\n" \
+"Thursday<x60>15:00 - 14:00</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 610
+"<t610>" \
+"<ac><u>Certicom: Security for Wireless Applications</u></a>\n" \
+"Thursday<x60>17:30 - 18:30</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 611
+"<t611>" \
+"<ac><u>Pumatech - Building Powerful Custom Solutions Using " \
+"Pumatech's MAP Architecture</u></a>\n" \
+"Wednesday<x60>17:00 - 18:00</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 612
+"<t612>" \
+"<ac><u>Aether Systems - Developing Palm OS® Applications " \
+"with Aether's ScoutBuilder</u></a>\n" \
+"Wednesday<x60>15:45 - 16:45</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 613
+"<t613>" \
+"<ac><u>TRG: Hardware and Software Products for Palm OS® " \
+"Devices</u></a>\n" \
+"Thursday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 614
+"<t614>" \
+"<ac><u>Synchrologic - Tools for Overcoming Complex Corportate " \
+"Data Sync Challenges</u></a>\n" \
+"Thursday<x60>15:00 - 16:00</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 615
+"<t615>" \
+"<ac><u>Kyocera - Developer Program</u></a>\n" \
+"Thursday<x60>16:15 - 17:15</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 616
+"<t616>" \
+"<ac><u>Handango - Maximizing Your Profitability through " \
+"Handandgo's Distribution Channels</u></a>\n" \
+"Wednesday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 617
+"<t617>" \
+"<ac><u>Centurasoft: Manage the Unmanageable - What" \
+"Happens after Mobilizing the Enterprise</u></a>\n" \
+"Wednesday<x60>12:30 - 13:30</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 618
+"<t618>" \
+"<ac><u>Sponsor Session TBA</u></a>\n" \
+"Friday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 619
+"<t619>" \
+"<ac><u>JP Systems</u></a>\n" \
+"Friday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 620
+"<t620L>" \
+"<ac><u>Next-Generation Palm Product Technology</u></a>\n" \
+"Wednesday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 621
+"<t621L>" \
+"<ac><u>Programming for Handspring's Springboard Platform</u></a>\n" \
+"Wednesday<x60>17:00 - 18:00</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 622
+"<t622L>" \
+"<ac><u>SONY Electronics, Inc</u></a>\n" \
+"Thursday<x60>16:15 - 17:15</f>\n" \
+"Room:<x60>Large Lab\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 623
+"<t623L>" \
+"<ac><u>Symbol Technologies 1</u></a>\n" \
+"Thursday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Small Lab\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 624
+"<t624L>" \
+"<ac><u>Symbol Technologies 2</u></a>\n" \
+"Thursday<x60>13:45 - 14:45</f>\n" \
+"Room:<x60>Small Lab\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 625
+"<t625L>" \
+"<ac><u>Hands on with IBM Pervasive Computing Solutions</u></a>\n" \
+"Thursday<x60>16:15 - 17:15</f>\n" \
+"Room:<x60>Small Lab\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 626
+"<t626L>" \
+"<ac><u>Computer Associates</u></a>\n" \
+"Tuesday<x60>16:00 - 17:00</f>\n" \
+"Room:<x60>Small Lab\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 628
+"<t628L>" \
+"<ac><u>Sponsor Lab Session TBA</u></a>\n" \
+"Wednesday<x60>15:45 - 16:45</f>\n" \
+"Room:<x60>Small Lab\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 629
+"<t629L>" \
+"<ac><u>Sponsor Lab Session TBA</u></a>\n" \
+"Thursday<x60>17:30 - 18:30</f>\n" \
+"Room:<x60>Small Lab\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 630
+"<t630PL>" \
+"<ac><u>Beyong PIM - Taking Mobile Information Management to the Next " \
+"Level</u></a>\n" \
+"Tuesday<x60>12:15 - 12:45</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 631
+"<t631PL>" \
+"<ac><u>Symbol Technologies</u></a>\n" \
+"Tuesday<x60>12:45 - 13:15</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 632
+"<t632PL>" \
+"<ac><u>Handspring</u></a>\n" \
+"Wednesday<x60>11:15 - 11:45</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 633
+"<t633PL>" \
+"<ac><u>SONY Electronics, Inc</u></a>\n" \
+"Wednesday<x60>11:45 - 12:15</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 634
+"<t634PL>" \
+"<ac><u>IBM - Support for Palm OS® Applications</u></a>\n" \
+"Thursday<x60>11:15 - 11:45</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 635
+"<t635PL>" \
+"<ac><u>Siebel: Handhelds for the PalmOS® Platform</u></a>\n" \
+"Thursday<x60>11:45 - 12:15</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 700
+"<t700>" \
+"<ac><u>Mobilizing e-Business</u></a>\n" \
+"Tuesday<x60>11:00 - 12:00</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>This session is for independent software developers and " \
+"in-house corporate developers, as well as enterprise managers " \
+"who run a line of business, department, or IT group. Come hear " \
+"Palm's vision for mobilizing e-business. Learn what factors are " \
+"driving the shift toward a truly mobile e-business environment. " \
+"Find out what roles wireless, email, server synchronization, and " \
+"security capabilities will play in realizing the mobile " \
+"e-business vision. And discover how your organization can " \
+"capitalize on this new wave of handheld solutions.</a>"
+
+HEX "hSTR" ID 701
+"<t701>" \
+"<ac><u>Palm's Enterprise Solutions Architecture</u></a>\n" \
+"Tuesday<x60>13:30 - 14:30</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Designed for IT managers and in-house developers, " \
+"this session provides an architectural overview of " \
+"enterprise applications for the Palm OS® platform. " \
+"Topics include handheld application development, data " \
+"synchronization, access methods, and security. You'll " \
+"gain valuable new insights into the essential concepts " \
+"behind successful mobile enterprise deployment. And find " \
+"out about the many components and areas involved in " \
+"mobile enterprise applications.</a>"
+
+HEX "hSTR" ID 703
+"<t703>" \
+"<ac><u>Developing and Designing for the Enterprise</u></a>\n" \
+"Tuesday<x60>14:45 - 15:45</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Gain new insights into the design, deployment, and " \
+"management of Palm OS® solutions within the enterprise. " \
+"Get a roadmap for successful design and development. Learn " \
+"about security considerations, application partitioning, and " \
+"other application requirements. Explore application design " \
+"issues such as custom vs. native applications, desktop vs. " \
+"server access, and software tools. And discover techniques " \
+"for distributing applications to remote users, as well as " \
+"building and installing a device image.</a>"
+
+HEX "hSTR" ID 704
+"<t704>" \
+"<ac><u>Enterprise Case Study 1: Palm@palm</u></a>\n" \
+"Tuesday<x60>16:00 - 17:00</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Find out how Palm, Inc. has identified, designed, and " \
+"implemented its own handheld mobile solutions; and learn " \
+"about key steps for success, potential pitfalls, critical " \
+"areas, and much more.</a>"
+
+HEX "hSTR" ID 705
+"<t705P>" \
+"<ac><u>Enterprise Case Study 2: Enterprise Customers</u></a>\n" \
+"Wednesday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Interested in deploying a handheld solution? Come hear " \
+"success stories and insights from customers who have implemented " \
+"Palm OS® solutions. Learn about the issues they faced during " \
+"the development process. And discover the benefits their " \
+"organizations have realized</a>"
+
+HEX "hSTR" ID 707
+"<t707>" \
+"<ac><u>Enterprise-Ready Handheld Management Solutions</u></a>\n" \
+"Wednesday<x60>12:30 - 13:30</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Palm Powered\231 devices can offer major benefits " \
+"throughout your company. Come explore how your organization " \
+"can manage these new business tools and the data they carry. " \
+"And learn how key issues—including security—are addressed " \
+"successfully by a range of solutions from Palm and its partners.</a>"
+
+HEX "hSTR" ID 708
+"<t708P>" \
+"<ac><u>Beyond the Desktop: Securing the Enterprise</u></a>\n" \
+"Wednesday<x60>17:00 - 16:00</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>As Palm Powered\231 devices proliferate, the market for advanced " \
+"security measures increases dramatically. Come learn about " \
+"important issues concerning mobility and data ownership. Hear " \
+"how security issues are already being addressed effectively. " \
+"Get insights into future development opportunities. And see at " \
+"least one new developer toolkit for cryptography—making its debut " \
+"at the PalmSource\231 Conference.</a>"
+
+HEX "hSTR" ID 709
+"<t709P>" \
+"<ac><u>Systems Integration Development and Implementation</u></a>\n" \
+"Wednesday<x60>15:45 - 16:45</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Come hear leading systems integrators share their experience " \
+"and insights into developing and implementing groundbreaking Palm " \
+"OS® solutions. Learn how Palm OS mobile solutions let you extend " \
+"the reach of information systems to a mobile workforce. Discover how " \
+"to use professional services firms to integrate Palm Powered\231 " \
+"devices within your corporate IS strategy. Learn what skills are " \
+"required to implement large-scale, projects-based mobile and wireless " \
+"solutions—and much more.</a>"
+
+HEX "hSTR" ID 710
+"<t710RT>" \
+"<ac><u>Systems Integration Development and Implementation</u></a>\n" \
+"Wednesday<x60>17:00 - 18:00</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Come meet with representatives from Palm and the Enterprise " \
+"Alliance Program (EAP) member firms. Get answers to your questions " \
+"about the development, creation, and deployment of mobile and " \
+"wireless solutions based on the Palm OS® platform. Exchange ideas " \
+"and strategies concerning the implementation process. And gain " \
+"unique insights into developing and implementing world-class mobile " \
+"solutions.</a>"
+
+HEX "hSTR" ID 711
+"<t711RT>" \
+"<ac><u>Government Solutions</u></a>\n" \
+"Wednesday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 800
+"<t800>" \
+"<ac><u>Vertical Market Opportunities</u></a>\n" \
+"Tuesday<x60>11:00 - 12:00</f>\n" \
+"Room:<x60>Ballroom A-B-G-H\n\n" \
+"<aj>Palm Powered\231 handhelds are playing an increasingly " \
+"vital role in a host of profitable vertical markets. These " \
+"include Consumer e-Commerce and Content, Education, Finance, " \
+"Games and Entertainment, Healthcare, Legal, music, and " \
+"Productivity. Come learn about the exceptional vertical " \
+"market technology and business opportunities that are open " \
+"to you as a member of the Palm Economy.</a>"
+
+HEX "hSTR" ID 802
+"<t802P>" \
+"<ac><u>e-Consumer and Content</u></a>\n" \
+"Wednesday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Great American J\n\n" \
+"<aj>If you're involved in content or e-commerce—and want " \
+"to expand content availability—this session is for you. " \
+"Hear how other companies have created products for mobile " \
+"users, and how they're now reaching new markets. Learn what " \
+"services are best suited for mobile users, as well as how to " \
+"monetize the relationship. And find out how to get your " \
+"content onto Palm Powered\231 devices.</a>"
+
+HEX "hSTR" ID 803
+"<t803>" \
+"<ac><u>Smart Moves: Opportunities in the Education Market</u></a>\n" \
+"Tuesday<x60>14:45 - 15:45</f>\n" \
+"Room:<x60>Great American J\n\n" \
+"<aj>Come learn about the market size, trends, and customer " \
+"successes driving Palm's significant investment in the " \
+"education arena. Discover the many development opportunities " \
+"now available to you. And find out how you can participate in " \
+"Palm's marketing activities during this academic year.</a>"
+
+HEX "hSTR" ID 805
+"<t805P>" \
+"<ac><u>The Wealth of Opportunities in the Financial Services Industry</u></a>\n" \
+"Tuesday<x60>16:00 - 17:00</f>\n" \
+"Room:<x60>Great American J\n\n" \
+"<aj>Hear market experts highlight key financial service solutions " \
+"based on the Palm OS® platform. Discover the many exciting " \
+"opportunities available to you in a wide range of businesses, " \
+"including banks, brokerages, and venture capital firms. And learn " \
+"about Palm's programs for this dynamic market, as well as the " \
+"increasing demand for innovative wireless solutions.</a>"
+
+HEX "hSTR" ID 806
+"<t806>" \
+"<ac><u>Entertainment on Palm Powered\231 Devices</u></a>\n" \
+"Thursday<x60>12:30 - 13:30</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>As games shift from freeware to commercial, the major players " \
+"are turning to the Palm OS® platform. Come get an insightful " \
+"overview into the types of games that work well on Palm Powered " \
+"devices. Learn about specific business models. And participate in " \
+"a lively discussion of game-related development issues.</a>"
+
+HEX "hSTR" ID 807
+"<t807>" \
+"<ac><u>Media on Palm Powered\231 Devices</u></a>\n" \
+"Thursday<x60>16:15 - 17:15</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>What are the implications of text, graphics, photos, and " \
+"video on Palm Powered handhelds? What about sound? How do " \
+"standards such as Open eBook, PDF, JPG, PNG, MPEG, and others " \
+"fit into the Palm Economy? And how can you leverage these " \
+"standards in your applications? Come hear the answers to these " \
+"and other crucial questions—and participate in a discussion of " \
+"related issues.</a>"
+
+HEX "hSTR" ID 808
+"<t808P>" \
+"<ac><u>Healthcare Market Solutions and Industry Perspective</u></a>\n" \
+"Tuesday<x60>12:15 - 13:15</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Hear from industry-leading companies that have developed " \
+"healthcare solutions for Palm Powered™ devices. Learn about the " \
+"solutions they provide for the healthcare space. And discover how " \
+"they are leveraging the momentum within the Palm Economy to " \
+"achieve their business objectives.</a>"
+
+HEX "hSTR" ID 809
+"<t809P>" \
+"<ac><u>Healthcare Deployment of Palm Powered\231 Devices</u></a>\n" \
+"Tuesday<x60>13:30 - 14:30</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Healthcare industry leaders are using Palm Powered " \
+"handhelds to streamline processes, reduce errors, and extend " \
+"critical information to the point of care. Come learn how these " \
+"leaders are deploying Palm Powered devices. And find out what " \
+"types of innovative solutions they need to meet their " \
+"organization's objectives.</a>"
+
+HEX "hSTR" ID 811
+"<t811>" \
+"<ac><u>The Case for Law on Palm Powered\231 Devices</u></a>\n" \
+"Tuesday<x60>13:30 - 14:30</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>With more than four million increasingly mobile professionals, " \
+"the legal market is perfect for Palm Economy developers. Come learn " \
+"how you can tap this extraordinary market. Discover how Palm OS® " \
+"solutions can provide mobile access to client records, transactional " \
+"documentation, federal and state regulations, and other key " \
+"information. And find out how to identify profitable opportunities " \
+"for new legal-market applications.</a>"
+
+HEX "hSTR" ID 812
+"<t812P>" \
+"<ac><u>Music and Audio Solutions on Palm Powered\231 Handhelds</u></a>\n" \
+"Thursday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>As the first mp3 and MIDI players for Palm Powered devices " \
+"emerge, there's a wealth of opportunities for innovative music " \
+"and audio applications. Attend this session to see composition, " \
+"notation, and transcription music tools on a MIDI player. " \
+"Discover new mp3 and alternate compression/technical format " \
+"applications. Learn about creating a new range of visionary " \
+"multimedia/expansion solutions—and much more.</a>"
+
+HEX "hSTR" ID 813
+"<t813>" \
+"<ac><u>The Palm Productivity Market</u></a>\n" \
+"Thursday<x60>17:30 - 18:30</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>Increased personal productivity is a compelling user benefit " \
+"of the Palm OS® platform. Find out what's behind the success of " \
+"popular productivity applications and utilities. Explore current "\
+"solutions. Discuss their relative efficiency—and areas for " \
+"improvement. And learn about the many profitable opportunities " \
+"available to you in this exciting market. </a>"
+
+HEX "hSTR" ID 814
+"<t814>" \
+"<ac><u>CRM Overview</u></a>\n" \
+"Tuesday<x60>12:15 - 13:15</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>CRM (customer relationship management) is a vital issue " \
+"for today's corporations. Come learn how Palm provides the " \
+"optimal mobile platform for hardware and software solutions " \
+"that maximize your CRM practice. Hear about specific applications " \
+"such as sales force automation, field service, customer service, " \
+"and support and marketing automation. And experience the wide " \
+"range of CRM solutions from Palm and our partners. </a>"
+
+HEX "hSTR" ID 816
+"<t816RT>" \
+"<ac><u>Healthcare Connections</u></a>\n" \
+"Tuesday<x60>14:45 - 15:45</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>You'll want to continue the discussions that begin in the " \
+"healthcare panel sessions: Session <l808>808P</l> (Healthcare " \
+"Market Overview and Industry Perspective) and Session <l809>809P</l> " \
+"(Healthcare Deployment of Palm Powered\231 Devices). So attend " \
+"this informal, collaborative roundtable and learn about Palm " \
+"initiatives in healthcare. Meet the experts who create and deploy " \
+"Palm OS® healthcare solutions. Gain even more useful " \
+"information and insights. Exchange ideas. And explore new opportunities.</a>"
+
+HEX "hSTR" ID 817
+"<t817RT>" \
+"<ac><u>Games and Entertainment</u></a>\n" \
+"Thursday<x60>17:30 - 18:30</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Come benefit from the experience—and enjoy the company—of " \
+"some of the best game designers for the Palm OS® platform. " \
+"Exchange information about full-motion video, strategies, AI, " \
+"and game design for a small screen and Palm controls. Bring " \
+"along not only your questions, but your personal vision for " \
+"the future of games and other entertainment applications.</a>"
+
+HEX "hSTR" ID 818
+"<t818RT>" \
+"<ac><u>Education Markets</u></a>\n" \
+"Tuesday<x60>16:00 - 17:00</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Meet Palm's education team and discuss development issues " \
+"with leading education technology experts. Hear members of the " \
+"Palm Advisory Council for Education (PACE) share their " \
+"perspective on development opportunities for administration, " \
+"curriculum, and productivity. And interact with customers and " \
+"decision-makers to learn about student, teacher/staff, and " \
+"institution-wide deployments.</a>"
+
+HEX "hSTR" ID 819
+"<t819RT>" \
+"<ac><u>Adding MIDI and mp3 Sound to Palm OS® Solutions</u></a>\n" \
+"Thursday<x60>15:00 - 16:00</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 900
+"<t900P>" \
+"<ac><u>Your New World of Opportunities</u></a>\n" \
+"Thursday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>Why should you consider entering international markets? What " \
+"are your international market opportunities? Which markets are right " \
+"for you? You can find the answers by attending this dynamic panel " \
+"discussion. Hear experts from Palm and Palm OS® platform licensees " \
+"reveal their vision and expectations. Review demographics and " \
+"technology trends in specific regions. And learn about the relative " \
+"penetration of personal computer and mobile phone technologies—as " \
+"well as Internet usage.</a>"
+
+HEX "hSTR" ID 901
+"<t901P>" \
+"<ac><u>Winning in the Japan and Asia Pacific Rim Markets</u></a>\n" \
+"Thursday<x60>13:45 - 14:45</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>Attend this session if you want to expand your business into " \
+"the Japan and Asia Pacific markets. You'll gain valuable insights " \
+"into the opportunities and challenges ahead. Find out how best to " \
+"plan your entry into Palm's four key Asian markets: Japan, North " \
+"Asia, South Asia, and Australia/New Zealand. Learn about regional " \
+"market conditions, as well as distribution, support, and localization " \
+"issues. And discover the resources and options that can help you " \
+"grow your markets.</a>"
+
+HEX "hSTR" ID 902
+"<t902P>" \
+"<ac><u>Succeeding in the European Market</u></a>\n" \
+"Friday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Thinking of expanding your business into Europe? Attend this " \
+"session to gain valuable insights into the opportunities and " \
+"challenges of entering Palm's key European markets. Learn about " \
+"regional market conditions, support, and localization issues. Find " \
+"out what resources and options are available to help you expand and " \
+"grow your markets. And hear one of our European partners share " \
+"their point of view about working with Palm.</a>"
+
+HEX "hSTR" ID 903
+"<t903>" \
+"<ac><u>Designing and Coding Your Application for Global Use</u></a>\n" \
+"Thursday<x60>15:00 - 16:00</f>\n" \
+"Room:<x60>Great America J\n\n" \
+"<aj>Whether you're new to the international market, or already " \
+"have globalization experience, you're sure to benefit from this " \
+"session. Discover how to globalize code for—and then localize—a Palm " \
+"OS®-based application. Learn techniques to strip away " \
+"encoding-specific or locale-dependent code based on Palm OS 3.5. " \
+"Find out what to do for applications destined for older ROMs. Hear " \
+"what globalization-related changes and modifications are in store " \
+"for the next Palm OS. And experience available tools to help you " \
+"localize your resources.</a>"
+
+HEX "hSTR" ID 905
+"<t905RT>" \
+"<ac><u>Succeeding in the European Market</u></a>\n" \
+"Friday<x60>14:15 - 15:15</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Continue the discussions you begin in Session <l902>902</l>, " \
+"Succeeding in the European Market. Join this roundtable to meet " \
+"and question session panelists. Interact with representatives " \
+"from Palm, developers, and Palm partners in the local markets. " \
+"Learn more about entering Palm's European markets. And network with " \
+"European players in the worldwide Palm Economy. </a>"
+
+HEX "hSTR" ID 905
+"<t905RT>" \
+"<ac><u>Succeeding in the European Market</u></a>\n" \
+"Friday<x60>14:15 - 15:15</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Continue the discussions you begin in Session <l902>902P</l>, " \
+"Succeeding in the European Market. Join this roundtable to meet " \
+"and question session panelists. Interact with representatives " \
+"from Palm, developers, and Palm partners in the local markets. " \
+"Learn more about entering Palm's European markets. And network with " \
+"European players in the worldwide Palm Economy. </a>"
+
+HEX "hSTR" ID 906
+"<t906RT>" \
+"<ac><u>Succeeding in the Japan/Asia Pacific Rim Market</u></a>\n" \
+"Thursday<x60>16:15 - 17:15</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Continue the discussions you begin in Session <l901>901P</l>, " \
+"Winning in the Japan and APR Markets. Join this roundtable to meet " \
+"and question session panelists. Interact with representatives from " \
+"Palm, developers, and Palm partners in the local markets. Learn " \
+"more about entering Palm's Asia Pacific and Japan markets. And " \
+"network with Pacific Rim players in the worldwide Palm Economy.</a>"
+
+HEX "hSTR" ID 907
+"<t907RT>" \
+"<ac><u>Designing and Coding Your Application for Global Use</u></a>\n" \
+"Friday<x60>13:00 - 14:00</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Meet Palm's international development team—and other solution " \
+"providers who are developing applications for the global market. " \
+"Take advantage of this perfect opportunity to share tips with other " \
+"developers. And offer feedback to the engineers working on the support " \
+"of future global applications for the Palm OS® platform.</a>"
+
+HEX "hSTR" ID 1000
+"<t1000>" \
+"<ac><u>Overview of New Palm Partner Programs</u></a>\n" \
+"Tuesday<x60>16:00 - 17:00</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>Palm's new Solution Partner Programs can greatly enhance your " \
+"development and marketing efforts. Discover how these programs " \
+"create the best possible environment for innovation, growth, and " \
+"success in the Palm Economy. Learn about program benefits and " \
+"levels, as well as a brand new suite of invaluable tools and " \
+"resources. And get the facts about important new support programs, " \
+"joint marketing opportunities, and certification and " \
+"compatibility programs.</a>"
+
+HEX "hSTR" ID 1001
+"<t1001>" \
+"<ac><u>Protecting Your Trademarks and Other Intellectual Property</u></a>\n" \
+"Friday<x60>13:00 - 14:00</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Discover how to protect your investment in your company name, brands, " \
+"and technology. Hear Palm's trademark attorney explain the basics of " \
+"protecting trademarks, copyrights, patents, and trade secrets. Learn " \
+"how to use Internet resources to effectively select, search, register, " \
+"use, and enforce trademarks—yet stay within your budget. And find out " \
+"how new Palm logos can communicate your product's Palm OS® compatibility.</a>"
+
+HEX "hSTR" ID 1002
+"<t1002P>" \
+"<ac><u>Palm, Inc. and Licensee Developer Services</u></a>\n" \
+"Wednesday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>You can access a wealth of technical, business, and marketing " \
+"resources through Palm licensees' developer programs—as well as " \
+"through the Palm OS® Developer Services Network. Attend this " \
+"interactive panel discussion to learn new ways to grow your " \
+"business. And discover how to capitalize on potential revenue " \
+"opportunities with our industry-leading licensee and Developer " \
+"Services Network partners.</a>"
+
+HEX "hSTR" ID 1003
+"<t1003RT>" \
+"<ac><u>Palm OS® Development and Marketing Support Services</u></a>\n" \
+"Wednesday<x60>10:00 - 11:00</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Meet face-to-face with Palm's licensees and Developer Services " \
+"Network partners. Gain unique insights from experts who provide " \
+"innovative services, resources, and tools to help you develop and market " \
+"your Palm OS products or services. Get answers to your specific questions. " \
+"And learn how best to leverage the many developer support services offered " \
+"by Palm and its partners.</a>"
+
+HEX "hSTR" ID 1004
+"<t1004>" \
+"<ac><u>Palm Ventures</u></a>\n" \
+"Friday<x60>11:15 - 12:15</f>\n" \
+"Room:<x60>Hall C/D\n\n" \
+"<aj>Attend this session to learn about Palm Ventures, the new group within " \
+"Palm, Inc., created to invest in companies that are focused on growing and " \
+"supporting the Palm Economy. Palm Ventures has earmarked US$50 million to " \
+"develop the initial portfolio and will support funded companies by " \
+"offering opportunities to partner with Palm. Come learn about the strategy " \
+"behind Palm Ventures and an outline of the types of investments that will " \
+"be considered.</a>"
+
+HEX "hSTR" ID 1005
+"<t1005RT>" \
+"<ac><u>New and Growing Business Resources</u></a>\n" \
+"Tuesday<x60>13:30 - 14:30</f>\n" \
+"Room:<x60>Cafe Collaborate\n" \
+"<x60>Room 209/210\n\n" \
+"<aj>Session Description TBA</a>"
+
+HEX "hSTR" ID 1200
+"<t1200PS>" \
+"<ac><u>Technology Primer</u></a>\n" \
+"Monday<x60>09:00 - 17:00</f>\n" \
+"Room:<x60>Theater\n\n" \
+"<aj>Attend this full day of technical sessions for an introduction to the " \
+"Palm OS® platform. These specially designed sessions will be presented by " \
+"master trainers from the Palm Developer Training Team. They're acknowledged " \
+"experts in communicating Palm OS development material clearly, concisely, " \
+"and effectively. The Technology Primer is composed of these four sessions: </a>\n" \
+"-<x8>Overview of the Palm OS and \n" \
+"<x8>Hardware: The history and \n" \
+"<x8>architecture of the Palm OS\n" \
+"<x8>platform and hardware. \n" \
+"-<x8>Architecture of a Palm OS \n"
+"<x8>Solution: The 'appearance' and \n" \
+"<x8>structure of a Palm OS solution, \n" \
+"<x8>where back-end systems fit,\n" \
+"<x8>and more.\n" \
+"-<x8>Tools of the Trade: An\n" \
+"<x8>introduction to the\n" \
+"<x8>CodeWarrior® IDE, Palm OS\n" \
+"<x8>Emulator (POSE), and other\n" \
+"<x8>important tools.\n" \
+"-<x8>API Overview: The facts you\n" \
+"<x8>need about forms, controls,\n" \
+"<x8>databases, and other key API\n" \
+"<x8>components."
+
+HEX "hSTR" ID 1300
+"<t1300PS>" \
+"<ac><u>New Business</u></a>\n" \
+"Monday<x60>09:00 - 17:00</f>\n" \
+"Room:<x60>Room 203/204\n\n" \
+"<aj>In collaboration with Palm, Inc., the industry leading Software " \
+"Development Forum (SDF) has designed a full day of sessions specifically " \
+"to benefit early-stage software companies. You'll hear presentations " \
+"and success stories from experts in the fields of venture capital, " \
+"business development, and investment banking. And gain invaluable " \
+"information about entrepreneurial and funding issues. The New Business " \
+"Primer comprises five sessions:</a>\n" \
+"-<x8>Business Models and Business\n" \
+"<x8>Plans: Key attributes of a\n" \
+"<x8>fundable business model and\n" \
+"<x8>the components of an effective\n" \
+"<x8>venture pitch.\n" \
+"-<x8>Evaluating Investment\n" \
+"<x8>Alternatives: An overview of\n" \
+"<x8>the venture funding process and\n" \
+"<x8>different sources of investment\n" \
+"<x8>capital—including angels, VCs, \n" \
+"<x8>corporate funds, and the Palm \n" \
+"<x8>Ventures Fund.\n " \
+"-<x8>Negotiating Term Sheets: A\n" \
+"<x8>tutorial on the typical terms \n" \
+"<x8>and conditions of a funding term \n" \
+"<x8>sheet.\n" \
+"-<x8>Partnering for Growth: A\n" \
+"<x8>discussion on the importance of\n" \
+"<x8>strategic alliances and \n" \
+"<x8>partnerships in establishing your\n" \
+"<x8>company—and then growing\n" \
+"<x8>your brand and market share.\n" \
+"-<x8>Merger, Acquisition, IPO: An\n" \
+"<x8>overview of the essential facts\n" \
+"<x8>and current issues."
